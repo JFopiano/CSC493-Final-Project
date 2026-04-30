@@ -1,11 +1,17 @@
 using System.Collections;
-using System.Collections.Generic;    
+using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class MazeRenderer : MonoBehaviour
 {
     [SerializeField] MazeGenerator mazeGenerator;
     [SerializeField] GameObject MazeCellPrefab;
+
+    // Monster Path, Spawnpoint and the Monster Itself
+    public NavMeshSurface navMeshSurface;
+    public GameObject monsterPrefab;
+    public Transform monsterSpawnPoint;
 
     // This the physical size of our maze cells. Getting this wrong will result in overlapping
     // or visible gaps between each cell. 
@@ -46,5 +52,12 @@ public class MazeRenderer : MonoBehaviour
                 mazeCell.Init(top, bottom, left, right);
             }
         }
+
+
+        // Inities the Navmesh after the Maze is created
+        navMeshSurface.BuildNavMesh();
+
+
+
     }
 }
