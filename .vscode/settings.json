@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "CSC493-Final-Project.slnx",
+    "dotnet.defaultSolution": "CSC493FP-Work.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
