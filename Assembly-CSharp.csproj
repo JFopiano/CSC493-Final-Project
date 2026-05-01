@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MazePlayerController.cs" />
     <Compile Include="Assets\Scripts\MazeGenerator.cs" />
+    <Compile Include="Assets\Scripts\DoorInteraction.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\MazeRenderer.cs" />
     <Compile Include="Assets\Scripts\MonsterMovement.cs" />

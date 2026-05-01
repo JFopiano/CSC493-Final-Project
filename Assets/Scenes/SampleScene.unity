@@ -837,6 +837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MazeRenderer
   mazeGenerator: {fileID: 1756009330}
   MazeCellPrefab: {fileID: 5030482176596390897, guid: c7e0c1c45be874949b1c8859643444c8, type: 3}
+  exitDoorPrefab: {fileID: 4500390157574453133, guid: 92a83ea8b9844a543aef08779af4b18b, type: 3}
+  doorFramePrefab: {fileID: 8876176063854653391, guid: f540b9f81b40c0049b913b84e66c53aa, type: 3}
   navMeshSurface: {fileID: 1247290679}
   monsterPrefab: {fileID: 270215987}
   monsterSpawnPoint: {fileID: 945627921}

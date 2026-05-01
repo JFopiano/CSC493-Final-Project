@@ -9,13 +9,14 @@ public class MazeRenderer : MonoBehaviour
 {
     [SerializeField] MazeGenerator mazeGenerator;
     [SerializeField] GameObject MazeCellPrefab;
+    [SerializeField] GameObject exitDoorPrefab;
+    [SerializeField] GameObject doorFramePrefab;
 
     // Monster Path, Spawnpoint and the Monster Itself
     public NavMeshSurface navMeshSurface;
     public GameObject monsterPrefab;
     public Transform monsterSpawnPoint;
     public Transform targetCheckpoint;
-
 
     // This the physical size of our maze cells. Getting this wrong will result in overlapping
     // or visible gaps between each cell. 
@@ -27,6 +28,13 @@ public class MazeRenderer : MonoBehaviour
     {
         // Get our MazeGenerator script to make us a maze.
         MazeCell[,] maze = mazeGenerator.GetMaze();
+
+        // Choose exit cell (top-right corner)
+        int exitX = mazeGenerator.mazeWidth - 1;
+        int exitY = mazeGenerator.mazeHeight - 1;
+
+        // Remove ONLY the top wall so there is an opening
+        maze[exitX, exitY].topWall = false;
 
         for (int x = 0; x < mazeGenerator.mazeWidth; x++)
         {
@@ -46,61 +54,109 @@ public class MazeRenderer : MonoBehaviour
                 // edge of the maze.
                 bool right = false;
                 bool bottom = false;
+
                 if (x == mazeGenerator.mazeWidth - 1)
                 {
                     right = true;
                 }
+
                 if (y == 0)
                 {
                     bottom = true;
                 }
 
+                // IMPORTANT: no extra modifications here — only the top wall is removed above
+
                 mazeCell.Init(top, bottom, left, right);
             }
         }
 
+        SpawnExitDoor(exitX, exitY);
 
         // Inities the Navmesh after the Maze is created
-        navMeshSurface.BuildNavMesh();
+        if (navMeshSurface != null)
+        {
+            navMeshSurface.BuildNavMesh();
+        }
 
-        Vector3 desiredSpawnPosition = new Vector3( (mazeGenerator.mazeWidth - 1) * cellSize, 0f, (mazeGenerator.mazeHeight - 1) * cellSize);
+        Vector3 desiredSpawnPosition = new Vector3(
+            (mazeGenerator.mazeWidth - 1) * cellSize,
+            0f,
+            (mazeGenerator.mazeHeight - 1) * cellSize
+        );
 
-        monsterSpawnPoint.position = desiredSpawnPosition;
+        if (monsterSpawnPoint != null)
+        {
+            monsterSpawnPoint.position = desiredSpawnPosition;
+        }
 
-        
         // 4. Find the nearest valid NavMesh position
         if (NavMesh.SamplePosition(desiredSpawnPosition, out NavMeshHit hit, navMeshSearchRadius, NavMesh.AllAreas))
         {
             // 5. Move the monster safely onto the NavMesh
-            NavMeshAgent agent = monsterPrefab.GetComponent<NavMeshAgent>();
+            NavMeshAgent agent = monsterPrefab != null ? monsterPrefab.GetComponent<NavMeshAgent>() : null;
 
             if (agent != null)
             {
                 agent.Warp(hit.position);
             }
-            else
+            else if (monsterPrefab != null)
             {
                 monsterPrefab.transform.position = hit.position;
             }
 
-            monsterPrefab.transform.rotation = monsterSpawnPoint.rotation;
+            if (monsterPrefab != null && monsterSpawnPoint != null)
+            {
+                monsterPrefab.transform.rotation = monsterSpawnPoint.rotation;
+            }
 
             // 6. Tell the monster where to go
-            MonsterMovement movement = monsterPrefab.GetComponent<MonsterMovement>();
+            if (monsterPrefab != null)
+            {
+                MonsterMovement movement = monsterPrefab.GetComponent<MonsterMovement>();
 
-            if (movement != null)
-            {
-                movement.targetCheckpoint = targetCheckpoint;
-                movement.GoToCheckpoint();
+                if (movement != null)
+                {
+                    movement.targetCheckpoint = targetCheckpoint;
+                    movement.GoToCheckpoint();
+                }
+                else
+                {
+                    Debug.LogWarning("MonsterMovement script is missing from the monster.");
+                }
             }
-            else
-            {
-                Debug.LogWarning("MonsterMovement script is missing from the monster.");
-            }
-            }
-            else
-            {
+        }
+        else
+        {
             Debug.LogWarning("Could not find a valid NavMesh position near the monster spawn point.");
+        }
+    }
+
+    void SpawnExitDoor(int exitX, int exitY)
+    {
+        // Door position (slightly outside the maze)
+        Vector3 doorPosition = new Vector3(
+            exitX * cellSize,
+            0.45f,
+            exitY * cellSize + cellSize / 2f
+        );
+
+        Quaternion doorRotation = Quaternion.identity;
+
+        if (exitDoorPrefab != null)
+        {
+            Instantiate(exitDoorPrefab, doorPosition, doorRotation, transform);
+        }
+
+        if (doorFramePrefab != null)
+        {
+            Vector3 framePosition = new Vector3(
+                exitX * cellSize,
+                0f,
+                exitY * cellSize + cellSize / 2f
+            );
+
+            Instantiate(doorFramePrefab, framePosition, doorRotation, transform);
         }
     }
 }
