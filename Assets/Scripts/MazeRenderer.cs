@@ -92,30 +92,36 @@ public class MazeRenderer : MonoBehaviour
             monsterSpawnPoint.position = desiredSpawnPosition;
         }
 
+        
+
         //Find the nearest valid NavMesh position
         if (NavMesh.SamplePosition(desiredSpawnPosition, out NavMeshHit hit, navMeshSearchRadius, NavMesh.AllAreas))
         {
+
+            GameObject monster = Instantiate(monsterPrefab, desiredSpawnPosition, Quaternion.identity);
+
+
             //Move the monster safely onto the NavMesh
-            NavMeshAgent agent = monsterPrefab != null ? monsterPrefab.GetComponent<NavMeshAgent>() : null;
+            NavMeshAgent agent = monster.GetComponent<NavMeshAgent>();
 
             // If the monster has a NavMeshAgent, use Warp to move it instantly. Otherwise, just set the position directly.
             if (agent != null)
             {
                 agent.Warp(hit.position);
             }
-            else if (monsterPrefab != null)
+            else if (monster != null)
             {
-                monsterPrefab.transform.position = hit.position;
+                monster.transform.position = hit.position;
             }
 
             // Set the monster's rotation to match the spawn point's rotation (if both are assigned)
-            if (monsterPrefab != null && monsterSpawnPoint != null)
+            if (monster != null && monsterSpawnPoint != null)
             {
-                monsterPrefab.transform.rotation = monsterSpawnPoint.rotation;
+                monster.transform.rotation = monsterSpawnPoint.rotation;
             }
 
             // Tell the monster where to go
-            MonsterMovement movement = monsterPrefab.GetComponent<MonsterMovement>();
+            MonsterMovement movement = monster.GetComponent<MonsterMovement>();
 
             // Get the corner checkpoints for the monster to patrol between
             if (movement != null)
