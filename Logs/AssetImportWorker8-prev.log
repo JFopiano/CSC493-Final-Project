@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-02T23:51:02.7772033Z"
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32387 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-04T21:58:11.2574375Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-02T23:51:02Z
+Date: 2026-05-04T21:58:11Z
 
 COMMAND LINE ARGUMENTS:
 A:\UnityHub\Unity Hub\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ A:/UnityHub/CSC493FP-Work
 -logFile
 Logs/AssetImportWorker8.log
 -srvPort
-64015
+58648
 -licensingIpc
 LicenseClient-paulp
 -force-d3d12
@@ -68,12 +68,12 @@ A:/UnityHub/CSC493FP-Work
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [29044]  Target information:
+Player connection [6828]  Target information:
 
-Player connection [29044]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 2764212549 [EditorId] 2764212549 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6828]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 1888524437 [EditorId] 1888524437 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [29044] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [29044] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6828] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6828] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.74 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path A:/UnityHub/CSC493FP-Work/Assets
@@ -103,13 +103,13 @@ Initialize mono
 Mono path[0] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002759 seconds.
+Registered in 0.003031 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -118,23 +118,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.993 seconds
-Domain Reload Profiling: 1861ms
-	BeginReloadAssembly (287ms)
-	RebuildCommonClasses (83ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (107ms)
-	LoadAllAssembliesAndSetupDomain (359ms)
-		LoadAssemblies (286ms)
-		AnalyzeDomain (343ms)
-			TypeCache.Refresh (341ms)
-				TypeCache.ScanAssembly (319ms)
-	FinalizeReload (1001ms)
+- Finished resetting the current domain, in  0.785 seconds
+Domain Reload Profiling: 1687ms
+	BeginReloadAssembly (291ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (122ms)
+	LoadAllAssembliesAndSetupDomain (381ms)
+		LoadAssemblies (291ms)
+		AnalyzeDomain (361ms)
+			TypeCache.Refresh (359ms)
+				TypeCache.ScanAssembly (335ms)
+	FinalizeReload (788ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (81ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (184ms)
-			ProcessInitializeOnLoadMethodAttributes (399ms)
+			InitializePlatformSupportModulesInManaged (94ms)
+			BeforeProcessingInitializeOnLoad (174ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (152ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -145,17 +145,17 @@ Begin MonoManager ReloadAssembly
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
 [Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-02T23:51:07.6869743Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-04T21:58:15.0922579Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              b811728b04654fcb90b330fe3a15e5f4
-  Correlation Id:          42a417e29c1db8aac9d4aba0c6ead561
-  External correlation Id: 8461359997638419431
+  Session Id:              79355591357b430a86daa45eeb659723
+  Correlation Id:          0ed2e0aa8a725d0709b580bcf38da216
+  External correlation Id: 3631712715804804560
   Machine Id:              qRZcJ3jZoV+klU0f72OZIpRyvBw=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.01s, handshake: 5.93s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-02T23:51:13.6351767Z"
-[Licensing::Module] Licensing Background thread has ended after 10.86s
-[Licensing::Module] Licensing is initialized (took 6.33s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.43s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-04T21:58:18.525387Z"
+[Licensing::Module] Licensing Background thread has ended after 7.27s
+[Licensing::Module] Licensing is initialized (took 3.56s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2474244442130-UnityPersXXXX
@@ -192,45 +192,518 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 6.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.82 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.562 seconds
-Domain Reload Profiling: 11736ms
-	BeginReloadAssembly (7135ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (65ms)
-	RebuildCommonClasses (105ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (310ms)
-	LoadAllAssembliesAndSetupDomain (1586ms)
-		LoadAssemblies (1331ms)
-		AnalyzeDomain (836ms)
-			TypeCache.Refresh (553ms)
-				TypeCache.ScanAssembly (515ms)
-			BuildScriptInfoCaches (245ms)
-			ResolveRequiredComponents (33ms)
-	FinalizeReload (2563ms)
+- Finished resetting the current domain, in  1.325 seconds
+Domain Reload Profiling: 6360ms
+	BeginReloadAssembly (3905ms)
+		DisableScriptedObjects (11ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (107ms)
+	LoadAllAssembliesAndSetupDomain (935ms)
+		LoadAssemblies (704ms)
+		AnalyzeDomain (431ms)
+			TypeCache.Refresh (309ms)
+				TypeCache.ScanAssembly (283ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1326ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (423ms)
-			ProcessInitializeOnLoadAttributes (1270ms)
-			ProcessInitializeOnLoadMethodAttributes (220ms)
-			AfterProcessingInitializeOnLoad (6ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 7.38 ms, found 4 plugins.
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (199ms)
+			ProcessInitializeOnLoadAttributes (683ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.75 ms, found 4 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6632 unused Assets / (4.9 MB). Loaded Objects now: 7456.
-Memory consumption went from 161.7 MB to 156.8 MB.
-Total: 20.458900 ms (FindLiveObjects: 1.453600 ms CreateObjectMapping: 1.097100 ms MarkObjects: 13.242800 ms  DeleteObjects: 4.660000 ms)
+Unloading 6635 unused Assets / (5.1 MB). Loaded Objects now: 7459.
+Memory consumption went from 162.4 MB to 157.3 MB.
+Total: 10.718300 ms (FindLiveObjects: 0.655900 ms CreateObjectMapping: 0.458400 ms MarkObjects: 6.939700 ms  DeleteObjects: 2.660900 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 96730.683761 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(11).wav
+  importAddress: Guid(ac697ce8f57c304448967778098e3533) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(11).wav using Guid(ac697ce8f57c304448967778098e3533) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '96bbbb27dddf400f07137317c3d0b53f') in 0.1260895 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74abce081cdbdbc41ac3f346e0989a47 DependenciesID=211de085e8d7603964f268d46270d2b5 StaticDependenciesID=fd1e2d64a6c7f3a391955171a794ff6c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Gravel
+  importAddress: Guid(679124ef3b78bdd4692da22b80cc87ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Gravel using Guid(679124ef3b78bdd4692da22b80cc87ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9494a524eabc7cceee77423a75ccd496') in 0.0166242 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f2960c8320cc93035a7b7d0aa844243 DependenciesID=44fd8f04ede93f7363353a036479cc7b StaticDependenciesID=007b826229383ac2e56dfa49bdb6d547 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Gravel/Footsteps_Gravel_Jump/Footsteps_Jump_Start_03.wav
+  importAddress: Guid(f7d6941d3b847874686c2b6a80ab8a1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Gravel/Footsteps_Gravel_Jump/Footsteps_Jump_Start_03.wav using Guid(f7d6941d3b847874686c2b6a80ab8a1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5adb3fc62778be013d0ede80e7bec67f') in 0.0214391 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=42eef069981f66189ff8cda4d96ac8e6 DependenciesID=09efe9ea0794ed5cd0121381baeb8712 StaticDependenciesID=0ff99575445f164e616f830e63d0326d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Mud/Footsteps_Mud_Run/Footsteps_Mud_Run_05.wav
+  importAddress: Guid(e97a8da4003210f41ab64be2f49d795e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Mud/Footsteps_Mud_Run/Footsteps_Mud_Run_05.wav using Guid(e97a8da4003210f41ab64be2f49d795e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1569e3013c5584375b645eeab0ffe993') in 0.0194616 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=94f759e6fe398aa90c2b488fd5da59bc DependenciesID=0378165778a47f2be75a8b3e2829cc2d StaticDependenciesID=b832f31658582269fbe943e1d42c122e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(53).wav
+  importAddress: Guid(f7a5fa8985c7b934aa40d908e9e7cfe2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(53).wav using Guid(f7a5fa8985c7b934aa40d908e9e7cfe2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b44df59de53b173db5845325429c8c05') in 0.0174391 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d950450acac501c151690043e858fd5b DependenciesID=318d2e5a6a702219b0bb75acdf3f7848 StaticDependenciesID=87e12f5164119be712d924a9d48b0ff6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Hard_Jump_Start_03.wav
+  importAddress: Guid(158dda579f2238949af5b31b76fc9fb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Hard_Jump_Start_03.wav using Guid(158dda579f2238949af5b31b76fc9fb3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3186bd0c8e15a43262823be27d5f94f5') in 0.0189167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9b484c42a4be9029bbb1995e122b85fb DependenciesID=17d38700eca0664707ed32812dac340a StaticDependenciesID=2e85ed16e5048386ab6ca5aef245b8b4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Run/Footsteps_Leaves_Run_05.wav
+  importAddress: Guid(80e0ad20812b5da4da809eb1976d38c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Run/Footsteps_Leaves_Run_05.wav using Guid(80e0ad20812b5da4da809eb1976d38c6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '403f6aa265417bbb6d43288767500562') in 0.0183023 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=324929f1b5af72a876f0e7b991ef109e DependenciesID=c38ba407a4c94818be80922cf925c058 StaticDependenciesID=68183e822378dc434e1219d714eb4bb7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(104).wav
+  importAddress: Guid(331ab0d871be2364ebf464068e2d4149) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(104).wav using Guid(331ab0d871be2364ebf464068e2d4149) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '63affa390bfaf8e44e9f99711f5e90cf') in 0.0192111 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd899331659a3af35c67013e666b56db DependenciesID=1986dbcf772e06b52317687b3d2a4011 StaticDependenciesID=54998a6a52ff3f45cf7da64899690cd8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Jump
+  importAddress: Guid(6c436b395e888b649bdaad7347a9b638) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Jump using Guid(6c436b395e888b649bdaad7347a9b638) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4a7cb885176d147c83a0d03c3bb49786') in 0.0150227 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c55d4c4eadb9e18c867adffb0291784b DependenciesID=c72a7dbf8c1fad43c0af67b4837dbbad StaticDependenciesID=91d8f6648bf602b272e0c83a3bc88b3a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_07.wav
+  importAddress: Guid(926831fad7b7b2d4e872a783e1dff180) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_07.wav using Guid(926831fad7b7b2d4e872a783e1dff180) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9255ce9adc11a88ea5c6154bf6da5c46') in 0.0213388 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11fd012d3f0eef95db7e923b0e10aed5 DependenciesID=716f467ef399cb6f58010144c891b9d0 StaticDependenciesID=5fb596b0a3caa9b422f8a53030d60b41 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Land_10.wav
+  importAddress: Guid(7d65afb5fe7bb7e41a03b001f5acfbde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Land_10.wav using Guid(7d65afb5fe7bb7e41a03b001f5acfbde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '63cb58251fe139f910dd97a6bd08b20b') in 0.0220696 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=27c9b84214cf7a16fc2feadf8e3f8f25 DependenciesID=6553811b3d0f1e09cb2ffea027df5e7e StaticDependenciesID=194c8c43cbb9364080f5797cb63f54c5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Hard_Jump_Land_04.wav
+  importAddress: Guid(8ef64626ce5b7e149b05c909f7f26218) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Hard_Jump_Land_04.wav using Guid(8ef64626ce5b7e149b05c909f7f26218) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ce67ce14a87b53a20f2b1f0b200ba18c') in 0.0179272 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c61d0b0f32f30611fecb713022fe6f2 DependenciesID=69c928ab2a831da1bee47f654cec18c8 StaticDependenciesID=4d3e5905d7630a3faa82f8a1154a38a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_05.wav
+  importAddress: Guid(41b5781294b7da44ebaad3bd7be35926) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_05.wav using Guid(41b5781294b7da44ebaad3bd7be35926) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52b09deb60d084496f0e16a5626b93de') in 0.0198781 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab141068e9e26872cd0c13a906b93add DependenciesID=2274e2c9e771b8024a75e3f336760195 StaticDependenciesID=9bd686e64e7de91a7cade9580f5e4468 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Run/Footsteps_MetalV1_Run_05.wav
+  importAddress: Guid(2244aa424da7d2f439f4c53fa73e8b53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Run/Footsteps_MetalV1_Run_05.wav using Guid(2244aa424da7d2f439f4c53fa73e8b53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '861ef2efe2676d020acef3c4d7c14dca') in 0.0233316 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8bc748aa07131239859de9d2cfde3d7c DependenciesID=6a522d334aea929ef297169437269ddc StaticDependenciesID=80b08c1d2715b515f0841d56dcac8bed 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Start_06.wav
+  importAddress: Guid(f193a8bae58928946916aab1c2068cf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Start_06.wav using Guid(f193a8bae58928946916aab1c2068cf1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1ef3bbfcdd088b30cf9b308219c999e2') in 0.0186996 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1edd0cd074b7bba3f8d954d0b0784f4d DependenciesID=4ecd19293e11ed0066057fa0ce3b7c56 StaticDependenciesID=42c4ce47969566d062b629c67b72f46e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.064953 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(86).wav
+  importAddress: Guid(e7cfd30468e33d84d8cb0607413793a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(86).wav using Guid(e7cfd30468e33d84d8cb0607413793a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a6d2bc3895f2ea71dca54c7f43027921') in 0.0477572 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=30952181dc5f8372124b1e7c9af19006 DependenciesID=cbc7ddf4ab9323e3797bc749c510fcfd StaticDependenciesID=1d18d20f1b674a3c68279057a4c947d7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(11).wav
+  importAddress: Guid(0258eabae3df77c47bc80396a4c72e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(11).wav using Guid(0258eabae3df77c47bc80396a4c72e36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '26d0db817933a19487f9e966d101993d') in 0.02161 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b83df4a56e2b838902a6ef7c27622a0e DependenciesID=d65d057da3e749c03ee0129958918960 StaticDependenciesID=575d6dc34c5cbb3ae91e64b8d37b49ad 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(67).wav
+  importAddress: Guid(06a1c6a73b4d42c42868e3818abb3e89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(67).wav using Guid(06a1c6a73b4d42c42868e3818abb3e89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fa2d7dce56caf350b37e7db35243ca8a') in 0.0199664 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02912ddd12c3a40ae00041b60c889193 DependenciesID=40eb8f401fd0c0b054c93e8e379a115a StaticDependenciesID=78c3302d79ba61ee5d7730e7cf220d78 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(22).wav
+  importAddress: Guid(5a34fbe4c992d2546a017fa061e14952) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(22).wav using Guid(5a34fbe4c992d2546a017fa061e14952) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e0ea0411dd3dcee333a7007e0366cef8') in 0.018911 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d965d53cac1deef6677d6d5eedcdee35 DependenciesID=2951ea423758b96f881363da9ff44cba StaticDependenciesID=c9701216b918e8ac99d15414c875afe2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(102).wav
+  importAddress: Guid(6c50e99eddc8587439b92943a7f5e102) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(102).wav using Guid(6c50e99eddc8587439b92943a7f5e102) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '44bf88e0be3fbf0327797d5343506369') in 0.0195811 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3da687ada0c88e67fc720590592c334c DependenciesID=3bf0aef73ede4315978811d617e0072e StaticDependenciesID=f3556dec3c45af4e0aedba5796b21a41 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(70).wav
+  importAddress: Guid(bb80f8e2eb8345e47a146138a9791e7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(70).wav using Guid(bb80f8e2eb8345e47a146138a9791e7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '15eeedfff8f57712526d6321fd83f041') in 0.019796 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5c0d83e5f7c0e0892bff7f68c5c95709 DependenciesID=a13604af182d3675726022362eccef80 StaticDependenciesID=632544e889bbedd6a85472dd68f42c03 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(113).wav
+  importAddress: Guid(eab8bc2aeccdd5644802836e4a30965e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(113).wav using Guid(eab8bc2aeccdd5644802836e4a30965e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '90e5f0aa2827f89ab90c6042660fbe1e') in 0.0204754 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0743a7f33384716b3e5d287923d32335 DependenciesID=1f5813345b6f2c7986f3df24bf34229e StaticDependenciesID=7063b608e01da34940da34ecf34aa771 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(80).wav
+  importAddress: Guid(a10072532324a0e4a86a68f80f1a5144) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(80).wav using Guid(a10072532324a0e4a86a68f80f1a5144) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2386ab360907eba01d73b0213b6ccef1') in 0.0187944 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cefa3fdaaf019b6019b417c05f4ac978 DependenciesID=0002e0dcbce765ca8240305970817531 StaticDependenciesID=41e042f2943c15488b00df8cc64bc918 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(25).wav
+  importAddress: Guid(5a3b4557053db314e83a64d88d6090e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(25).wav using Guid(5a3b4557053db314e83a64d88d6090e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '60c80a2ebc65fa24d4382e52bc73a59b') in 0.0201674 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8ef32d931805e9889b09c819b5dced8 DependenciesID=f98c6b293b616fc3066cc2f16a798b1c StaticDependenciesID=0195293c8ec3fc38f70710affa3bc159 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(90).wav
+  importAddress: Guid(e8548fcddc642d144921fdab01639757) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(90).wav using Guid(e8548fcddc642d144921fdab01639757) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fbadd181c5ef824ead1558054a4c1c9a') in 0.0216436 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b6397cc6e348ed34efa7adaf791a1e1 DependenciesID=433994aaa1be57c37d69a4e1b65ea213 StaticDependenciesID=99e023f4f4cb8484aa8d2bd3fcac8878 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(4).wav
+  importAddress: Guid(963f169ca9bdef24a8631191c8aa5996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(4).wav using Guid(963f169ca9bdef24a8631191c8aa5996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a2bf56c0da433c4ae4122e6245aa8ded') in 0.0187349 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9d065de75e6da3e04cf226499bd373ce DependenciesID=afd6d007c245f67e223e9d8cc9ecd8c1 StaticDependenciesID=683c03bfcbbff6d56e0d4fd7c6b57c88 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(68).wav
+  importAddress: Guid(29fd123bd9504ce488d710eea6a62783) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(68).wav using Guid(29fd123bd9504ce488d710eea6a62783) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0d3e4e36dd1660a8e61119fa2adae234') in 0.0221668 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=730b6a43c7a3f48cb143fca61125b09f DependenciesID=9085312b958a7fe6d4ad65c08faea066 StaticDependenciesID=85753599726251dab474ae3a552efce4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(34).wav
+  importAddress: Guid(42e7879b6cfb1f44ea8e02de1dc2c53c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(34).wav using Guid(42e7879b6cfb1f44ea8e02de1dc2c53c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '36e9031531943bc5219d69edd5d1f057') in 0.0193477 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d7856e787fba6e665e5b7b4f4b935f8 DependenciesID=f57d5a73d8f60f1eca9a1067b8e5b38e StaticDependenciesID=91d29367af59665fccee89e2fb9d1351 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(14).wav
+  importAddress: Guid(3ddabb297c958fd4b961694865dba940) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Fleshy_Anger_v1_(14).wav using Guid(3ddabb297c958fd4b961694865dba940) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '96ed83e574cc5ac5d31b7fa17731731c') in 0.0198991 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cc27e0a06f039a571dfb1e56f8a553c3 DependenciesID=bbd447579f887d5e3a94bba1d24cb911 StaticDependenciesID=53be4f817df54cf67dce1d0023c3a90f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(117).wav
+  importAddress: Guid(49de3090b5ca5894a9cd777951b05e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/shashirajproductions/Deadly_Creatures_Pack1_v1/Audio/SFX/Deadly_Creatures_Growls_Roars_v1_(117).wav using Guid(49de3090b5ca5894a9cd777951b05e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ebc6d4b99d8068b9c82bb08fce0db6cd') in 0.0183281 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=381b40b6748ef5609fe2c552d2c1e371 DependenciesID=038312b0b6a0e7cf1cc3fb12897cda41 StaticDependenciesID=26ed219a7fb0d726fccf7c915b57a6f8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 2.92 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.350 seconds
+Domain Reload Profiling: 3533ms
+	BeginReloadAssembly (1351ms)
+		DisableScriptedObjects (8ms)
+		CreateAndSetChildDomain (1074ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (661ms)
+		LoadAssemblies (554ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (260ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1351ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (208ms)
+			ProcessInitializeOnLoadAttributes (724ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Refreshing native plugins compatible for Editor in 2.85 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6633 unused Assets / (5.3 MB). Loaded Objects now: 7477.
+Memory consumption went from 167.3 MB to 162.0 MB.
+Total: 12.835900 ms (FindLiveObjects: 1.010100 ms CreateObjectMapping: 0.736900 ms MarkObjects: 8.368200 ms  DeleteObjects: 2.718900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 2.59 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.323 seconds
+Domain Reload Profiling: 3524ms
+	BeginReloadAssembly (1352ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (1062ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (679ms)
+		LoadAssemblies (538ms)
+		AnalyzeDomain (322ms)
+			TypeCache.Refresh (17ms)
+			BuildScriptInfoCaches (284ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1324ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (221ms)
+			ProcessInitializeOnLoadAttributes (680ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 2.76 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6633 unused Assets / (5.2 MB). Loaded Objects now: 7480.
+Memory consumption went from 170.5 MB to 165.3 MB.
+Total: 11.415100 ms (FindLiveObjects: 1.013700 ms CreateObjectMapping: 0.440100 ms MarkObjects: 6.962600 ms  DeleteObjects: 2.996500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 453.083845 seconds.
+  path: Assets/Prefabs/Monster.prefab
+  importAddress: Guid(4840e46046c17a34382419fac1454937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Monster.prefab using Guid(4840e46046c17a34382419fac1454937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '95d2887a8dcae0ba4893e0dc63280a8d') in 0.8072559 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=802f757328348a943022443f9538ed35 DependenciesID=ac07c065b202ca69c97f790885b99ae2 StaticDependenciesID=5176816d390e1a634d42d29699431f82 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 157
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 2.03 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.298 seconds
+Domain Reload Profiling: 3477ms
+	BeginReloadAssembly (1370ms)
+		DisableScriptedObjects (33ms)
+		CreateAndSetChildDomain (1081ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (648ms)
+		LoadAssemblies (531ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (261ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1299ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (203ms)
+			ProcessInitializeOnLoadAttributes (676ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6634 unused Assets / (5.4 MB). Loaded Objects now: 7514.
+Memory consumption went from 176.1 MB to 170.7 MB.
+Total: 12.032500 ms (FindLiveObjects: 1.279400 ms CreateObjectMapping: 0.412900 ms MarkObjects: 7.687100 ms  DeleteObjects: 2.651100 ms)
+
+Prepare: number of updated asset objects reloaded= 0

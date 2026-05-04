@@ -11,6 +11,8 @@ public class MazeRenderer : MonoBehaviour
     [SerializeField] GameObject MazeCellPrefab;
     [SerializeField] GameObject exitDoorPrefab;
     [SerializeField] GameObject doorFramePrefab;
+    [SerializeField] GameObject roofPrefab;
+    public float roofHeight = 1f;
 
 
     // Monster Path, Spawnpoint and the Monster Itself
@@ -73,6 +75,8 @@ public class MazeRenderer : MonoBehaviour
                 mazeCell.Init(top, bottom, left, right);
             }
         }
+
+        //SpawnRoof();
 
         SpawnExitDoor(exitX, exitY);
 
@@ -201,5 +205,36 @@ public class MazeRenderer : MonoBehaviour
         }
 
         return validCorners;
+    }
+
+    private void SpawnRoof()
+    {
+        if (roofPrefab == null)
+        {
+            Debug.LogWarning("Roof prefab is not assigned.");
+            return;
+        }
+
+        float mazeWidthWorld = mazeGenerator.mazeWidth * cellSize;
+        float mazeHeightWorld = mazeGenerator.mazeHeight * cellSize;
+
+        Vector3 roofPosition = new Vector3(
+            (mazeWidthWorld - cellSize) / 2f,
+            roofHeight,
+            (mazeHeightWorld - cellSize) / 2f
+        );
+
+        GameObject roof = Instantiate(
+            roofPrefab,
+            roofPosition,
+            Quaternion.identity,
+            transform
+        );
+
+        roof.transform.localScale = new Vector3(
+            mazeWidthWorld,
+            0.1f,
+            mazeHeightWorld
+        );
     }
 }

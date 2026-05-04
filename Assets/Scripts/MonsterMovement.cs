@@ -32,6 +32,8 @@ public class MonsterMovement : MonoBehaviour
     public AudioSource farAudioSource;
     public AudioSource closeAudioSource;
     public AudioSource chaseAudioSource;
+    private AudioManager audioManager;
+    private bool previousChaseState = false;
 
     public float closeAudioDistance = 8f;
     public float audioFadeSpeed = 3f;
@@ -60,6 +62,7 @@ public class MonsterMovement : MonoBehaviour
     {   
         // Find the player in the scene by tag
         GameObject playerObject = GameObject.FindGameObjectWithTag(playerTag);
+        audioManager = FindAnyObjectByType<AudioManager>();
         StartMonsterAudio();
 
         // If a player object was found, store its transform for later use
@@ -122,6 +125,7 @@ public class MonsterMovement : MonoBehaviour
 
         UpdateMonsterAudio();
         UpdateAnimation();
+        UpdateChaseMusic();
 
 
 
@@ -287,4 +291,16 @@ public class MonsterMovement : MonoBehaviour
 
         animator.SetInteger("Walk", isMoving ? 1 : 0);
     }
+
+    private void UpdateChaseMusic()
+    {
+        if (audioManager == null) return;
+
+        if (isChasing != previousChaseState)
+        {
+            audioManager.SetChaseMusic(isChasing);
+            previousChaseState = isChasing;
+        }
+    }
 }
+
