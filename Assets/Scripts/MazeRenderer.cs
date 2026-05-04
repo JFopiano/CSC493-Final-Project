@@ -12,6 +12,7 @@ public class MazeRenderer : MonoBehaviour
     [SerializeField] GameObject exitDoorPrefab;
     [SerializeField] GameObject doorFramePrefab;
 
+
     // Monster Path, Spawnpoint and the Monster Itself
     public NavMeshSurface navMeshSurface;
     public GameObject monsterPrefab;
@@ -166,6 +167,7 @@ public class MazeRenderer : MonoBehaviour
 
             Instantiate(doorFramePrefab, framePosition, doorRotation, transform);
         }
+
     }
 
     // This function returns the world positions of the four corners of the maze, 

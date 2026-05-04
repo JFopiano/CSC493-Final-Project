@@ -3,44 +3,54 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverController : MonoBehaviour
-{   
-
-    // UI Elements
+{
     [Header("UI")]
     public GameObject jumpScareImage;
+    public GameObject gameOverImage;
     public GameObject buttonPanel;
 
-    // Timing
-    [Header("Timing")]
-    public float buttonDelay = 2.5f;
+    [Header("Ragdoll")]
+    public GameObject ragdollPrefab;
+    public Transform ragdollSpawnPoint;
 
-    // This method is called when the Game Over scene is loaded
+    [Header("Timing")]
+    public float jumpScareDuration = 1.0f;
+
     private void Start()
     {
-        // Ensure the cursor is visible and unlocked in the Game Over scene
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        // Hide the buttons and show the jump scare image
         if (buttonPanel != null)
         {
             buttonPanel.SetActive(false);
         }
 
-        // Show the jump scare image immediately
         if (jumpScareImage != null)
         {
             jumpScareImage.SetActive(true);
         }
 
-        // Start the coroutine to show the buttons after a delay
-        StartCoroutine(ShowButtonsAfterDelay());
+        StartCoroutine(GameOverSequence());
     }
-    
-    // Coroutine to show the buttons after a delay
-    private IEnumerator ShowButtonsAfterDelay()
+
+    private IEnumerator GameOverSequence()
     {
-        yield return new WaitForSeconds(buttonDelay);
+        yield return new WaitForSeconds(jumpScareDuration);
+
+        if (jumpScareImage != null)
+        {
+            jumpScareImage.SetActive(false);
+        }
+
+        SpawnRagdoll();
+
+        yield return new WaitForSeconds(2.0f); // Short delay before showing buttons
+
+        if (gameOverImage != null)
+        {
+            gameOverImage.SetActive(true);
+        }
 
         if (buttonPanel != null)
         {
@@ -48,13 +58,32 @@ public class GameOverController : MonoBehaviour
         }
     }
 
-    // Method to retry the game by loading the maze scene again
+    private void SpawnRagdoll()
+    {
+        if (ragdollPrefab == null || ragdollSpawnPoint == null)
+        {
+            Debug.LogWarning("Ragdoll prefab or spawn point is missing.");
+            return;
+        }
+
+        GameObject ragdoll = Instantiate(
+            ragdollPrefab,
+            ragdollSpawnPoint.position,
+            ragdollSpawnPoint.rotation
+        );
+
+        Animator animator = ragdoll.GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.enabled = false;
+        }
+    }
+
     public void RetryGame()
     {
         SceneManager.LoadScene("MazeScene");
     }
 
-    // Method to go back to the start screen
     public void GoToStartScreen()
     {
         SceneManager.LoadScene("StartScreen");
