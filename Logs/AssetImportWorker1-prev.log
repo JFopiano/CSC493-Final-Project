@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-04T01:04:55.211617Z"
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32387 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-02T23:34:29.3131055Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-02T23:34:29Z
+Date: 2026-05-04T01:04:55Z
 
 COMMAND LINE ARGUMENTS:
 A:\UnityHub\Unity Hub\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ A:/UnityHub/CSC493FP-Work
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64015
+62328
 -licensingIpc
 LicenseClient-paulp
 -force-d3d12
@@ -68,12 +68,12 @@ A:/UnityHub/CSC493FP-Work
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [38744]  Target information:
+Player connection [34432]  Target information:
 
-Player connection [38744]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 556294862 [EditorId] 556294862 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [34432]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 1517566592 [EditorId] 1517566592 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [38744] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [38744] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [34432] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [34432] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.06 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.96 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path A:/UnityHub/CSC493FP-Work/Assets
@@ -103,59 +103,59 @@ Initialize mono
 Mono path[0] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003447 seconds.
+Registered in 0.003558 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
+[Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-04T01:04:59.7402199Z"
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.859 seconds
-Domain Reload Profiling: 2008ms
-	BeginReloadAssembly (409ms)
-	RebuildCommonClasses (85ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (138ms)
-	LoadAllAssembliesAndSetupDomain (485ms)
-		LoadAssemblies (408ms)
-		AnalyzeDomain (465ms)
-			TypeCache.Refresh (462ms)
-				TypeCache.ScanAssembly (428ms)
-	FinalizeReload (861ms)
+- Finished resetting the current domain, in  0.907 seconds
+Domain Reload Profiling: 2160ms
+	BeginReloadAssembly (495ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (146ms)
+	LoadAllAssembliesAndSetupDomain (490ms)
+		LoadAssemblies (495ms)
+		AnalyzeDomain (468ms)
+			TypeCache.Refresh (466ms)
+				TypeCache.ScanAssembly (437ms)
+	FinalizeReload (910ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (122ms)
-			BeforeProcessingInitializeOnLoad (190ms)
-			ProcessInitializeOnLoadAttributes (232ms)
-			ProcessInitializeOnLoadMethodAttributes (163ms)
+			InitializePlatformSupportModulesInManaged (127ms)
+			BeforeProcessingInitializeOnLoad (196ms)
+			ProcessInitializeOnLoadAttributes (242ms)
+			ProcessInitializeOnLoadMethodAttributes (178ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
-[Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-02T23:34:33.8237429Z"
 Begin MonoManager ReloadAssembly
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              11cd5c3e981a4bb299f938014270b7e0
-  Correlation Id:          42a417e29c1db8aac9d4aba0c6ead561
-  External correlation Id: 546364038913829955
+  Session Id:              73960e1dfd864d77adc1159776503cb1
+  Correlation Id:          114b7cebea2a89d1994c8cae05273c52
+  External correlation Id: 8700067841608033854
   Machine Id:              qRZcJ3jZoV+klU0f72OZIpRyvBw=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.42s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-02T23:34:37.2449338Z"
-[Licensing::Module] Licensing Background thread has ended after 7.93s
-[Licensing::Module] Licensing is initialized (took 3.34s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.66s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-04T01:05:03.4015937Z"
+[Licensing::Module] Licensing Background thread has ended after 8.19s
+[Licensing::Module] Licensing is initialized (took 2.76s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2474244442130-UnityPersXXXX
@@ -192,353 +192,134 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 2.10 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 2.62 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.05 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.547 seconds
-Domain Reload Profiling: 6441ms
-	BeginReloadAssembly (3759ms)
-		DisableScriptedObjects (10ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (108ms)
-	LoadAllAssembliesAndSetupDomain (942ms)
-		LoadAssemblies (737ms)
-		AnalyzeDomain (484ms)
-			TypeCache.Refresh (355ms)
-				TypeCache.ScanAssembly (329ms)
-			BuildScriptInfoCaches (98ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1547ms)
+- Finished resetting the current domain, in  1.630 seconds
+Domain Reload Profiling: 6154ms
+	BeginReloadAssembly (3194ms)
+		DisableScriptedObjects (11ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (146ms)
+	LoadAllAssembliesAndSetupDomain (1078ms)
+		LoadAssemblies (859ms)
+		AnalyzeDomain (509ms)
+			TypeCache.Refresh (374ms)
+				TypeCache.ScanAssembly (345ms)
+			BuildScriptInfoCaches (112ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1630ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (204ms)
-			ProcessInitializeOnLoadAttributes (850ms)
-			ProcessInitializeOnLoadMethodAttributes (117ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (243ms)
+			ProcessInitializeOnLoadAttributes (809ms)
+			ProcessInitializeOnLoadMethodAttributes (122ms)
 			AfterProcessingInitializeOnLoad (3ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.35 ms, found 4 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6632 unused Assets / (6.0 MB). Loaded Objects now: 7456.
-Memory consumption went from 159.5 MB to 153.5 MB.
-Total: 13.716900 ms (FindLiveObjects: 0.624800 ms CreateObjectMapping: 0.496000 ms MarkObjects: 8.209900 ms  DeleteObjects: 4.382700 ms)
+Unloading 6634 unused Assets / (5.1 MB). Loaded Objects now: 7458.
+Memory consumption went from 160.5 MB to 155.5 MB.
+Total: 12.333500 ms (FindLiveObjects: 1.226600 ms CreateObjectMapping: 0.416900 ms MarkObjects: 7.731900 ms  DeleteObjects: 2.952400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 344383.863544 seconds.
-  path: Assets/Scenes/MonsterTest.unity
-  importAddress: Guid(21640bdf9baf21f4ea8da8b5ee0a1080) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MonsterTest.unity using Guid(21640bdf9baf21f4ea8da8b5ee0a1080) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd94ddeab593bd222170625643db5c2b6') in 0.1282865 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=720afc25e2435891a28ac7a5e1f40216 DependenciesID=50c142b3ad7670a108b3a504d35d29ee StaticDependenciesID=d276b363925132dffd852eccdfe3acf9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Scenes/MazeScene.unity
-  importAddress: Guid(051f9a6b922211749bfa27b4d5c178dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MazeScene.unity using Guid(051f9a6b922211749bfa27b4d5c178dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '09a46fbb8acb3f46bed93010c48c27b7') in 0.016931 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46029644ed6c11c7b1178c8c918b0616 DependenciesID=1f80e5414e93f4c624b668a44c0a7b45 StaticDependenciesID=6e13983067da6f59ffb7f11c785bc013 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Scripts/MazeRenderer.cs
-  importAddress: Guid(1006b896e222f6c42b1a5057c0bde61c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/MazeRenderer.cs using Guid(1006b896e222f6c42b1a5057c0bde61c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '19ddbdb79b9b890d31a5a5165c2bacb3') in 0.034721 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=41893e3cc8d462f88f8b0af3a62e5219 DependenciesID=3d2cb0df81571c4ed01f6609c9138e8b StaticDependenciesID=b9bee36447b09547727f7fb20ffe15d7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.408022 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Materials_ArmorsHumans/StarterArmor_2.mat
-  importAddress: Guid(eb672304fc7494d498965b8f2b242de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Materials_ArmorsHumans/StarterArmor_2.mat using Guid(eb672304fc7494d498965b8f2b242de6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '54ad589c5e324ff2d51b09df2be2d752') in 0.1624363 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ea695b66b4a70b7d1fc6211d6a9b97bf DependenciesID=514eee6560fe95a0f751cdb17c170fc5 StaticDependenciesID=8027cf4cd578c6d5351c08435d01cbc2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Beard_3_Normal.png
-  importAddress: Guid(6830f91aa93200f43adf85d7570efa9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Beard_3_Normal.png using Guid(6830f91aa93200f43adf85d7570efa9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '376acc5893f8725ed1e303430df57bb3') in 0.0855184 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ba33dab7f5a7dc826a2c8c97d7e810f9 DependenciesID=1be35706855d4701b2e10c31f01c93d6 StaticDependenciesID=2a37a2fa2128dc60370459724b62a66e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Metallic.png
-  importAddress: Guid(db908c9fe4a953e48b2012ab87881eb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Metallic.png using Guid(db908c9fe4a953e48b2012ab87881eb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3e4fd4cf1864d000f138de610e36648c') in 0.0306886 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f0e6f8eda73cc411b5a6298a18eda5af DependenciesID=8123c1681805ccd1abfada62de65e151 StaticDependenciesID=4265b9f34d825f468b99f1839675f43e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/Face1.mat
-  importAddress: Guid(054d31690a0aa2b4ca36ab9490a41860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/Face1.mat using Guid(054d31690a0aa2b4ca36ab9490a41860) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3bc086c61872e015705484a298080192') in 0.0776078 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ac54b556fb0b4f74fd722d2e3788d22 DependenciesID=1aece3e2de8ed5445cced0f52d3edb2e StaticDependenciesID=c10d97bab7c4736e86fc53b9efc9b9fb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/Hair1.mat
-  importAddress: Guid(9cf0ecea53738bf4c9b9b7f4d3c740a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/Hair1.mat using Guid(9cf0ecea53738bf4c9b9b7f4d3c740a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a6c4e1bf790b0101cfb590377b9efb37') in 0.0276927 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a059f4b9aef2503b223ca881fdbfb717 DependenciesID=202337d99e73404e90457a6f422488b2 StaticDependenciesID=7c5a302a136f50f42bf89feb4f994904 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Blink/Art/Animations/Combat/SpinLoop_TwoHanded.fbx
-  importAddress: Guid(7c113a9e8e9b62e43ae9a94fd6144f22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/SpinLoop_TwoHanded.fbx using Guid(7c113a9e8e9b62e43ae9a94fd6144f22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9ad5dcebe96220cb32b39be7a0ef92c2') in 0.0875986 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=19d687d383602558fbc4800e6b805208 DependenciesID=3b2b27de985e3e18854a3b1702960036 StaticDependenciesID=ee0e596be60909b28628b7e71f24fc54 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Blink/Art/Animations/Combat
-  importAddress: Guid(89e8d4563aef42e4a9187c9520a7100b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat using Guid(89e8d4563aef42e4a9187c9520a7100b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '345bfc8b41c4762c410e0485e555a31c') in 0.0207431 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b85cd3bb39bd5b152753dbe783b92fe DependenciesID=6ba7bdeaea891c86e46d663cccfc230b StaticDependenciesID=69a3830ff0d15db8da671803521545e5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Blink/Art/Characters
-  importAddress: Guid(d3108140d939a4a4d99396fca81ed378) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters using Guid(d3108140d939a4a4d99396fca81ed378) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '09caec4b526ddaa8bcafd7142c34df86') in 0.0201311 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=17ec91e7f49ccfb8eccf3ed6ca76a6f0 DependenciesID=7ce5ff981241451995c6e2cea61ba6be StaticDependenciesID=9a8b9f2d1a450f48dd43a80a50b84e49 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Face_1_Normal.png
-  importAddress: Guid(2fe3f27a06fab9942b92f134a4692435) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Face_1_Normal.png using Guid(2fe3f27a06fab9942b92f134a4692435) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2d163c2255a3045f4b66864d5cf0d51f') in 0.0275985 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9469c8e659858c0ef87f44c85e023e12 DependenciesID=89b0f9015d26fdfdc04e3f06c2117b37 StaticDependenciesID=874ed09b9988a227ff4ec8f8d5a142fa 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Blink/Art/Animations/Combat/MeeleeAttack_OneHanded.fbx
-  importAddress: Guid(b38fcdbf88f95f2468be0a4ae7aae7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/MeeleeAttack_OneHanded.fbx using Guid(b38fcdbf88f95f2468be0a4ae7aae7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0d878fcceda072b15544ab5f93edfec1') in 0.0319892 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6acc327b39be09ca86e5c109b72c442b DependenciesID=ee13effc9ee4574a1584401fbfa44b34 StaticDependenciesID=877459adcd05bccb7212fdea10809860 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyebrows_BaseColor.png
-  importAddress: Guid(86d5f01b65fb52f46a32b15bcae95926) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyebrows_BaseColor.png using Guid(86d5f01b65fb52f46a32b15bcae95926) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0a880869086feb9520a0ba12f4515935') in 0.0248823 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=febe0ffdeed43e128c6a02bece7ca90d DependenciesID=e2b12970200f06ead80d0aeff3c69eb0 StaticDependenciesID=a64cc7d0a33ab93168305516ed14ba75 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Blink/Art/Animations/Combat/SpinAttack_TwoWeapons.fbx
-  importAddress: Guid(fa9ccddb5938ff44a81ee06e2f6d1a58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/SpinAttack_TwoWeapons.fbx using Guid(fa9ccddb5938ff44a81ee06e2f6d1a58) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd1179706368f5355dbf79f2cab44c9b6') in 0.0299788 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=512c56acbe4d45030743e25f5f12b888 DependenciesID=9152405d36a77d9ac4464fdd161b537f StaticDependenciesID=362cf1fdce95c5b4d5ed7cfa07c049b8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Blink/Art/Animations/Movement/RunBackwardLeft.fbx
-  importAddress: Guid(795d7e2aa16edf544a19d9686ca095f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Movement/RunBackwardLeft.fbx using Guid(795d7e2aa16edf544a19d9686ca095f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5b03ef77f2e57fe2efdbaf3b8c3ee7f3') in 0.0286285 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b79ac81959d25755bf620c170c36ca2 DependenciesID=67b9aa033d05368a3aa9b11cbc947b74 StaticDependenciesID=59356c54c211e8948c2e20749c4bd279 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_1_Metallic.png
-  importAddress: Guid(dc52fff855c43084d8b4ac321e14dbaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_1_Metallic.png using Guid(dc52fff855c43084d8b4ac321e14dbaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eb4a75e85d9a1be2a740d5d1751ee15e') in 0.0233141 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3acdc9dca31ee9832fac8760d1227d7c DependenciesID=3f9ed3207b76ca6d5abed9613cecfba1 StaticDependenciesID=70c97118cdc77010bd2d596d69b1fe97 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blink/Art/Animations/Combat/CastingLoop.fbx
-  importAddress: Guid(e487d3680e9eb444ab919d2f9855308f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/CastingLoop.fbx using Guid(e487d3680e9eb444ab919d2f9855308f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f6335ad19baa63ed14bfacd52865697b') in 0.0312882 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b1ec367c9f5db0a8f22ec783c24ddc9 DependenciesID=e20e3d352acf0dfbaab91517a40ac08d StaticDependenciesID=6279a67a6d26b43f8c224467de80bcc0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Meshes_Humans/StylizedHumanMale_Hair2.fbx
-  importAddress: Guid(4ae144e9f7cc1024789fec711c9fe589) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Meshes_Humans/StylizedHumanMale_Hair2.fbx using Guid(4ae144e9f7cc1024789fec711c9fe589) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a64254e360318ca1b9dca413d9722373') in 0.0451837 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18ac867bea513bc9b2f6c85a62fd3b6b DependenciesID=98796cf8d280ad53c2c56d48deec02cd StaticDependenciesID=6b327bd5720f80739a7b1cb6508cb055 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Blink/Art
-  importAddress: Guid(129d5b9f03c802a4193de37d8fd7019e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art using Guid(129d5b9f03c802a4193de37d8fd7019e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '21f470a374f0e1f31efde1f230f82c36') in 0.0165138 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7ea2fd44144c778e9cd4c5db8112d9c1 DependenciesID=e06fb509d61ce9382d4c074bc420b5bc StaticDependenciesID=f83937ca05dc5cd761743693d4b70523 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Body_BaseColor.png
-  importAddress: Guid(e9afd4073d6bf2041bb6db2850dcee83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Body_BaseColor.png using Guid(e9afd4073d6bf2041bb6db2850dcee83) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '943f62b5562ca7c2e1c515f5be1f83b4') in 0.0264834 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a5be790edbbe20c6714084eb63dd8b5f DependenciesID=ea73b81e1fce9302bdcb897ac6f5c0c9 StaticDependenciesID=9dc8d72c2bc31d88bffa0ebf5669c9a1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_2_Normal.png
-  importAddress: Guid(9ae2fb8e01588b3439fc011662249965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_2_Normal.png using Guid(9ae2fb8e01588b3439fc011662249965) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2f7ff14659237bb7c08447d44e67f6f4') in 0.0278258 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cded447ff9e64e70fcd2ff9ef7bb50b2 DependenciesID=466c8e2aef958cfb17a9e8b0c8f6bbcc StaticDependenciesID=bcea8815652996228717e0081df3c0a4 
+  Time since last request: 21532.881386 seconds.
+  path: Assets/_Recovery/0 (2).unity
+  importAddress: Guid(9e143df417200fa46a5f6972b73480d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0 (2).unity using Guid(9e143df417200fa46a5f6972b73480d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9daa9ffcb01f2ce3133f3160942c329c') in 0.1278979 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=afce4241bad46a7be121812daa106de4 DependenciesID=f1c04170c68d673b0a9bcd12b43903a9 StaticDependenciesID=ba566a6bf6b6f3eebce8f7871b335c4e 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000041 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Normals.png
-  importAddress: Guid(e177d5bb74558254481e153a0dd6a6de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Normals.png using Guid(e177d5bb74558254481e153a0dd6a6de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b27276cb7ff779c09fee5b3cddbf9ba4') in 0.0244528 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fcdeab952cce6065c72d15a9446f9edb DependenciesID=239cb87adc0549e62dd0574ff1e1b474 StaticDependenciesID=44eb0618e7c1c92f05910b2e7814abba 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/Scripts/GameOverController.cs
+  importAddress: Guid(bbc757639da961942824eaccf69b0599) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/GameOverController.cs using Guid(bbc757639da961942824eaccf69b0599) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ce1cf9566324abcccfafdc07b7b517fa') in 0.0417199 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=99c84019308001d07f5605246da636ba DependenciesID=8ed21a6f76b88064ab2b5251729d72ef StaticDependenciesID=db95a57d10f060ab29966c42353f689e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Face_1_Roughness.png
-  importAddress: Guid(67889cff740646d41a6d382fdebe1c89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Face_1_Roughness.png using Guid(67889cff740646d41a6d382fdebe1c89) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '493d82dc0bb5af8579f0497e2c8c2820') in 0.0264084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0ecce25ab5b876a947a94b17c7c9021a DependenciesID=5e5382bcff7ed6a0431a4d6da0ef85fe StaticDependenciesID=114ba12918593201587f46d272b4f62f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.493 seconds
+Domain Reload Profiling: 2997ms
+	BeginReloadAssembly (499ms)
+		DisableScriptedObjects (12ms)
+		CreateAndSetChildDomain (87ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (104ms)
+	LoadAllAssembliesAndSetupDomain (801ms)
+		LoadAssemblies (768ms)
+		AnalyzeDomain (337ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (305ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1493ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (241ms)
+			ProcessInitializeOnLoadAttributes (806ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6632 unused Assets / (5.6 MB). Loaded Objects now: 7476.
+Memory consumption went from 166.3 MB to 160.7 MB.
+Total: 14.656700 ms (FindLiveObjects: 0.706000 ms CreateObjectMapping: 0.475800 ms MarkObjects: 10.216600 ms  DeleteObjects: 3.254300 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Blink/Art/Animations/Movement/StrafeRight.fbx
-  importAddress: Guid(087092adc27465a41a8f07804f3c0178) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Movement/StrafeRight.fbx using Guid(087092adc27465a41a8f07804f3c0178) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5dce9de3037fc054dfb36aa8a9b5c2f5') in 0.0288769 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a11d269bdeb9becfefc439b339dec26 DependenciesID=ca0c87edd82d65afb111743d7eee82de StaticDependenciesID=8c63b1953bb2905ee2178fafe045123d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Accessories_T_Metallic.png
-  importAddress: Guid(bfe6b713d9257bc4ebf727a0fe3e6a79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Accessories_T_Metallic.png using Guid(bfe6b713d9257bc4ebf727a0fe3e6a79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '010c172e5daf0486ab62654bc036e81a') in 0.0281367 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f62df3fbe7cbdd7b6692067682909733 DependenciesID=8dbb08a006bf7d8cdfbf8a33c62f8b90 StaticDependenciesID=1f54058b1718270cff423342b7638063 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyes_Normal.png
-  importAddress: Guid(385ad83120284f141ab6bc1d7faee193) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyes_Normal.png using Guid(385ad83120284f141ab6bc1d7faee193) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a49f7a631960c902f7e6f9cd3be55e5e') in 0.0235182 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cd59ebd45f5e88ae74f270e8e945955a DependenciesID=8e1147dd17d12d0a178ed06dc61ddd3a StaticDependenciesID=5f3f7cb8f3fdcc1dc8347b85f082c604 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Blink/Art/Animations/Combat/BowShot.fbx
-  importAddress: Guid(c951eb6179d35744aabf7c3ebbd99251) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/BowShot.fbx using Guid(c951eb6179d35744aabf7c3ebbd99251) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8665c7b6d3ff87d5482f9e00137cb0b5') in 0.0269373 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a2b36d9e921f31292ee8c3841a3ae6c DependenciesID=b52878e7631f45343e72d43595099b14 StaticDependenciesID=99bfcbaecd3f54fe8ad0f1dec7912319 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blink/Art/Animations/Combat/GetHit.fbx
-  importAddress: Guid(f75e27afa8373234f85607c745d65beb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/GetHit.fbx using Guid(f75e27afa8373234f85607c745d65beb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e610f6f23a76c7f8944286481f715cf6') in 0.0352396 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76e0ba8e93b08da96aa235a8b08a73fe DependenciesID=b95a93fe57888e1cec14ed33b874d744 StaticDependenciesID=1dec9701bc0e798fa641a580882e906a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_1_Normal.png
-  importAddress: Guid(b5b8b0556071abf46886ebf5c8a1d67a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Hair_1_Normal.png using Guid(b5b8b0556071abf46886ebf5c8a1d67a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5c896d8c20b1b4d7527d2845e8828b24') in 0.0306878 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=30486ac946dd7878b5a3c50e09289b16 DependenciesID=12f0e4d72956dc1f475820ee45e1de13 StaticDependenciesID=200f747296fda133d0b30000d7f6ba05 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/EyesOuter.mat
-  importAddress: Guid(9a99dff16321ae842a85df39fa0e9992) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Materials_Humans/EyesOuter.mat using Guid(9a99dff16321ae842a85df39fa0e9992) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4c73fd0e94958e3119c80d0fd4734bbc') in 0.0219351 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2181bd76f0960bbc54b3a2bce038b607 DependenciesID=32cd141d99eeb150b7f1f5376714fe9f StaticDependenciesID=685dc58edf163c585746e3226095c9bf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Roughness.png
-  importAddress: Guid(314f5ca462484d942a2f2afa0c3652dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Armors_Humans/Textures_ArmorsHumans/StarterArmor_Roughness.png using Guid(314f5ca462484d942a2f2afa0c3652dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '94c7ddb7db79fa4ffeae4880e3d56d2c') in 0.0284359 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0cd006f4bc043bf4293de5004cb3a6c7 DependenciesID=8706bf41ac1a8bf122b2dd530d3b64d9 StaticDependenciesID=fdb6da351106a86a5f182494da553afb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Blink/Art/Animations/Combat/SpinAttack_TwoHanded.fbx
-  importAddress: Guid(83cb8742d5b5bec4f86b2e4a26822bef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/SpinAttack_TwoHanded.fbx using Guid(83cb8742d5b5bec4f86b2e4a26822bef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '32059e95b0a738cc55da62adb3ac8b5b') in 0.0290127 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d899cb872b7458268901349841a4cc3 DependenciesID=4e5fff40fa9864ac0067347c0b30c047 StaticDependenciesID=d77d9a347690b5c14d0716be6322e687 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blink/Art/Animations/Combat/PunchRight.fbx
-  importAddress: Guid(4486cfc3a1c066340b182fa51bc679ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Animations/Combat/PunchRight.fbx using Guid(4486cfc3a1c066340b182fa51bc679ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3661d356a9e8dd5b7b8ea7e165b44716') in 0.027567 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=598d94a4884b3f35806e1c73c771c2e7 DependenciesID=bb3531010a9f0489f11db104339339a2 StaticDependenciesID=2a7c135a5718bd0a58a151492239f436 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 160
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyes_Metallic.png
-  importAddress: Guid(07d4225cc2084214e9f420858da9526f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Eyes_Metallic.png using Guid(07d4225cc2084214e9f420858da9526f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '727f67b02598dd878126159d2f7ff342') in 0.0224446 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=45ae8402ca2c14f42fa70469cb32db04 DependenciesID=1ec6c17316bf04274c74bba09bf0c678 StaticDependenciesID=5e011527f23397f2c5a28dc25bd3b1c7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Meshes_Humans/StylizedHumanMale_TopKnot.fbx
-  importAddress: Guid(a6d7db1de2226af429da52cf7c2b1169) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Meshes_Humans/StylizedHumanMale_TopKnot.fbx using Guid(a6d7db1de2226af429da52cf7c2b1169) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ea40d1e280752a01c259ab231f70fd44') in 0.0267681 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c2960de342eb0c4301530297c9cbc39c DependenciesID=49fc5b503a4affb4320a4d73fa68580f StaticDependenciesID=c55eb14b2c4bfde25fd072bc86c16478 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Demo_Characters/DEMO_FreeStylizedHumanMale
-  importAddress: Guid(8fde04ccbede9a74c8b0970ab4e57371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Demo_Characters/DEMO_FreeStylizedHumanMale using Guid(8fde04ccbede9a74c8b0970ab4e57371) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2177b1db4779956208a6e8cfdbf50dae') in 0.0191872 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b0c839283ce347b3c2ba31e116f1d5fe DependenciesID=62345c52460c09563ee3ef1a773d3ea5 StaticDependenciesID=2839713ec8babe9d8d8ddf3092a8d0b7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Accessories_T_BaseColor3.png
-  importAddress: Guid(db239ec122f611d47b4e9c445c141437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Blink/Art/Characters/Stylized/Humans/Textures_Humans/HM_Accessories_T_BaseColor3.png using Guid(db239ec122f611d47b4e9c445c141437) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fb55369a3b6a79948bfc03ccb9818935') in 0.0227417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e0aa7419a204d22107358b35b49b8920 DependenciesID=c134d030ebccabbcf31e881c734dc56c StaticDependenciesID=597f06b509054450033402ded54a2c73 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0

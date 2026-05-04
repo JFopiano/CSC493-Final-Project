@@ -28,6 +28,21 @@ public class MonsterMovement : MonoBehaviour
     public float chaseSpeed = 3.5f;
     public float losePlayerTime = 2f;
 
+    [Header("Monster Audio")]
+    public AudioSource farAudioSource;
+    public AudioSource closeAudioSource;
+    public AudioSource chaseAudioSource;
+
+    public float closeAudioDistance = 8f;
+    public float audioFadeSpeed = 3f;
+
+    [Range(0f, 1f)] public float farMaxVolume = 0.25f;
+    [Range(0f, 1f)] public float closeMaxVolume = 0.7f;
+    [Range(0f, 1f)] public float chaseMaxVolume = 1f;
+
+    [Header("Monster Animation")]
+    private Animator animator;
+
     // Internal state
     private Transform player;
     private bool isChasing = false;
@@ -37,6 +52,7 @@ public class MonsterMovement : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Set the initial patrol destination and player reference
@@ -44,6 +60,7 @@ public class MonsterMovement : MonoBehaviour
     {   
         // Find the player in the scene by tag
         GameObject playerObject = GameObject.FindGameObjectWithTag(playerTag);
+        StartMonsterAudio();
 
         // If a player object was found, store its transform for later use
         if (playerObject != null)
@@ -102,6 +119,12 @@ public class MonsterMovement : MonoBehaviour
         {
             PatrolUpdate();
         }
+
+        UpdateMonsterAudio();
+        UpdateAnimation();
+
+
+
     }
 
     // This method is called from MazeRenderer after the monster is spawned and placed on the NavMesh.
@@ -193,5 +216,75 @@ public class MonsterMovement : MonoBehaviour
 
         Gizmos.DrawRay(eyePosition, leftBoundary * viewDistance);
         Gizmos.DrawRay(eyePosition, rightBoundary * viewDistance);
+    }
+
+    private void StartMonsterAudio()
+    {
+        if (farAudioSource != null && !farAudioSource.isPlaying)
+        {
+            farAudioSource.volume = farMaxVolume;
+            farAudioSource.Play();
+        }
+
+        if (closeAudioSource != null && !closeAudioSource.isPlaying)
+        {
+            closeAudioSource.volume = 0f;
+            closeAudioSource.Play();
+        }
+
+        if (chaseAudioSource != null && !chaseAudioSource.isPlaying)
+        {
+            chaseAudioSource.volume = 0f;
+            chaseAudioSource.Play();
+        }
+    }
+
+    private void UpdateMonsterAudio()
+    {
+        if (player == null) return;
+
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        float targetFarVolume = farMaxVolume;
+        float targetCloseVolume = 0f;
+        float targetChaseVolume = 0f;
+
+        if (isChasing)
+        {
+            targetFarVolume = 0f;
+            targetCloseVolume = 0f;
+            targetChaseVolume = chaseMaxVolume;
+        }
+        else if (distanceToPlayer <= closeAudioDistance)
+        {
+            targetFarVolume = 0f;
+
+            float closeness = 1f - Mathf.Clamp01(distanceToPlayer / closeAudioDistance);
+            targetCloseVolume = Mathf.Lerp(0.2f, closeMaxVolume, closeness);
+        }
+
+        FadeAudioSource(farAudioSource, targetFarVolume);
+        FadeAudioSource(closeAudioSource, targetCloseVolume);
+        FadeAudioSource(chaseAudioSource, targetChaseVolume);
+    }
+
+    private void FadeAudioSource(AudioSource source, float targetVolume)
+    {
+        if (source == null) return;
+
+        source.volume = Mathf.MoveTowards(
+            source.volume,
+            targetVolume,
+            audioFadeSpeed * Time.deltaTime
+        );
+    }
+
+    private void UpdateAnimation()
+    {
+        if (animator == null || agent == null) return;
+
+        bool isMoving = agent.velocity.magnitude > 0.1f;
+
+        animator.SetInteger("Walk", isMoving ? 1 : 0);
     }
 }

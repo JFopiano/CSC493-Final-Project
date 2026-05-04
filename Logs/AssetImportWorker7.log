@@ -1,0 +1,594 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-04T21:27:51.2369799Z"
+Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32387 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-05-04T21:27:51Z
+
+COMMAND LINE ARGUMENTS:
+A:\UnityHub\Unity Hub\6000.4.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+A:/UnityHub/CSC493FP-Work
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+58648
+-licensingIpc
+LicenseClient-paulp
+-force-d3d12
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: A:/UnityHub/CSC493FP-Work
+A:/UnityHub/CSC493FP-Work
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [30128]  Target information:
+
+Player connection [30128]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 1141024239 [EditorId] 1141024239 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [30128] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [30128] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 7.63 ms, found 4 plugins.
+Initialize engine version: 6000.4.4f1 (360f97ecca93)
+[Subsystems] Discovering subsystems at path A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path A:/UnityHub/CSC493FP-Work/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2860)
+    Vendor:          NVIDIA
+    VRAM:            7948 MB
+    App VRAM Budget: 7180 MB
+    Driver:          32.0.15.9636
+Initialize mono
+Mono path[0] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Managed'
+Mono path[1] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002631 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.868 seconds
+Domain Reload Profiling: 1877ms
+	BeginReloadAssembly (324ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (130ms)
+	LoadAllAssembliesAndSetupDomain (445ms)
+		LoadAssemblies (322ms)
+		AnalyzeDomain (426ms)
+			TypeCache.Refresh (424ms)
+				TypeCache.ScanAssembly (397ms)
+	FinalizeReload (872ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (111ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (242ms)
+			ProcessInitializeOnLoadMethodAttributes (176ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
+[Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-04T21:27:55.2703974Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              675193291c6745a6b170de28740ff31c
+  Correlation Id:          0ed2e0aa8a725d0709b580bcf38da216
+  External correlation Id: 797401827285868782
+  Machine Id:              qRZcJ3jZoV+klU0f72OZIpRyvBw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.45s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-04T21:27:58.7252212Z"
+[Licensing::Module] Licensing Background thread has ended after 7.49s
+[Licensing::Module] Licensing is initialized (took 3.50s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 2474244442130-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 3.54 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.76 ms, found 4 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.588 seconds
+Domain Reload Profiling: 6650ms
+	BeginReloadAssembly (3881ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (140ms)
+	LoadAllAssembliesAndSetupDomain (952ms)
+		LoadAssemblies (711ms)
+		AnalyzeDomain (470ms)
+			TypeCache.Refresh (340ms)
+				TypeCache.ScanAssembly (318ms)
+			BuildScriptInfoCaches (108ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1589ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (236ms)
+			ProcessInitializeOnLoadAttributes (820ms)
+			ProcessInitializeOnLoadMethodAttributes (128ms)
+			AfterProcessingInitializeOnLoad (4ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.86 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6635 unused Assets / (6.2 MB). Loaded Objects now: 7459.
+Memory consumption went from 158.3 MB to 152.2 MB.
+Total: 11.888600 ms (FindLiveObjects: 0.633500 ms CreateObjectMapping: 0.497600 ms MarkObjects: 7.241000 ms  DeleteObjects: 3.512300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 94911.393339 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Run/Footsteps_Snow_Hard_Run_11.wav
+  importAddress: Guid(1cacf06a281a3f140a56c8766da08d36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Run/Footsteps_Snow_Hard_Run_11.wav using Guid(1cacf06a281a3f140a56c8766da08d36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '17763a944ea7e2f3032fa97ebf4ef1ec') in 0.1400391 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3e9334c19018fddd2224324eb73b269a DependenciesID=d47278397aea812692b8941f7945c432 StaticDependenciesID=e9207d985801c5550e23d18e6824805e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Run/Footsteps_Sand_Run_12.wav
+  importAddress: Guid(826b5ab8735d6ff4c9e018ef29045829) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Run/Footsteps_Sand_Run_12.wav using Guid(826b5ab8735d6ff4c9e018ef29045829) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '534d9cc9dff5f40f5961315753f1bf77') in 0.0239491 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f4835e8afe6794e564e47c73166b1199 DependenciesID=56ce24cf732062b576a210d709d93f5a StaticDependenciesID=f5000278e832a92b4f30e2a8880f1afc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Downloaded/Horror Atmosphere LITE/Ambience/Ambience FX/Falling-004.wav
+  importAddress: Guid(6fd2f9d4ab7c23a4c84a794dac8d8667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Horror Atmosphere LITE/Ambience/Ambience FX/Falling-004.wav using Guid(6fd2f9d4ab7c23a4c84a794dac8d8667) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '48e876f2cf639b52c75fd676a802dd3a') in 0.0413743 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33b3dd545dd611e6df3015b731a6c06a DependenciesID=08cc5c4439af9b91417ef45210156962 StaticDependenciesID=b9c7329f0fb4aacceac59f9b1982bd01 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Jump_Start_01.wav
+  importAddress: Guid(6431605160c83d7468a5dc4cca267526) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Jump/Footsteps_Snow_Jump_Start_01.wav using Guid(6431605160c83d7468a5dc4cca267526) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '76cfebcc8de63b82deaef14b0d3dd8cb') in 0.021521 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=860eb7a3448b576403af68cfe4b4e85c DependenciesID=99362639720fe9499e69cff33da59916 StaticDependenciesID=fe5da99c113a5c45af0e25a56782e1ca 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_08.wav
+  importAddress: Guid(f1547ad8fbfa4f24d83e5a445aee860d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Walk/Footsteps_DirtyGround_Walk_08.wav using Guid(f1547ad8fbfa4f24d83e5a445aee860d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7da5b39947f6b49826e73d1fa51b7b61') in 0.0236772 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1f3fccd56a7bc4e48e114f6d19c635b5 DependenciesID=7b90f316aef1f8c7b4d1e023fb6a2d5f StaticDependenciesID=09fade0bbf7de18d6f31093d94687078 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_06.wav
+  importAddress: Guid(1fb63af572f3ebb469e2d7709aaf8a7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_06.wav using Guid(1fb63af572f3ebb469e2d7709aaf8a7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '29cb9e8e3614123bd5cf2ab103ca22f6') in 0.0222849 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b4078cb836482d3691b745d2a0a0dfb DependenciesID=465e027c3dcecd167c17766055bb2671 StaticDependenciesID=e209eecb81cbe231095f20732730e01f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Run/Footsteps_Water_Run_02.wav
+  importAddress: Guid(5cb5fe43bdf748744a0458fdffed8e70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Run/Footsteps_Water_Run_02.wav using Guid(5cb5fe43bdf748744a0458fdffed8e70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0fe983be122a9a5aadc08cb04931f2c9') in 0.022157 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab926a1d4dc105201e9aedd51e906511 DependenciesID=cc20a5b3f54e81efc02031bd25406e6e StaticDependenciesID=6da42a116e5bd989d77ca88748b38274 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_02.wav
+  importAddress: Guid(3bd1b93317b7a3a49b13011cdaa64d0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_02.wav using Guid(3bd1b93317b7a3a49b13011cdaa64d0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '99efca513f355fe9199cc353943ebd00') in 0.0230141 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1190dc9c74c5ae0adcb79a28ab160c37 DependenciesID=20adc0cbf6cef3e44162fee1e07931f5 StaticDependenciesID=5c00d302183fb6521fee5414fdfb558f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_03.wav
+  importAddress: Guid(7c518e8469a403b4c981664ecb28a79a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Run/Footsteps_DirtyGround_Run_03.wav using Guid(7c518e8469a403b4c981664ecb28a79a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd086bd60dc3cb1682c4df6bbb59983c9') in 0.0196166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2eb3c5ad1f1258e45c1eb877381d4d61 DependenciesID=23f73f25612eb9a8172ab48629e75d75 StaticDependenciesID=82261ed5db693957549a6f1e2e53e46f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Run/Footsteps_Sand_Run_20.wav
+  importAddress: Guid(31ce2f4f55b79d743ae941e2bc3a8dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Run/Footsteps_Sand_Run_20.wav using Guid(31ce2f4f55b79d743ae941e2bc3a8dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bf88b0fc334781506bb170a625aa1d0a') in 0.0192394 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10001952445c56dad51c198c3d776808 DependenciesID=41e7e52517805123232c382653728921 StaticDependenciesID=ee167390e0cca31dfe50a89541473b81 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03.wav
+  importAddress: Guid(0909de896e9029541b92ae05fe15e4b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Walk/Footsteps_Tile_Walk_03.wav using Guid(0909de896e9029541b92ae05fe15e4b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4bdc35dde44f18ac966e3794e71fd90a') in 0.0195756 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=20ab90e414dc6e39da9de164f893ebe1 DependenciesID=7efd226b276a8c1627f7bd328a83c057 StaticDependenciesID=6d974d30bda47659b416e3b78657733c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Jump/Footsteps_Water_Jump_Big_02.wav
+  importAddress: Guid(15022a33ccea24f45aa7071adf3ba492) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Jump/Footsteps_Water_Jump_Big_02.wav using Guid(15022a33ccea24f45aa7071adf3ba492) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '55015c349416c4eabd5499fb4138298b') in 0.0244909 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5dc51a4fcd509e05f6cd2abfdb1a04ac DependenciesID=3d5b1cc6c0366df9af35cab7bc20e029 StaticDependenciesID=9221cf62d6603c17728cd90bfc56c5cd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_02.wav
+  importAddress: Guid(c86476186f357d44eb470d68a2986520) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_02.wav using Guid(c86476186f357d44eb470d68a2986520) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dd29f7475af343bf17af0bea440a32b9') in 0.0204231 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ffe03dc3110bd09f8698a2579fea389c DependenciesID=7051d4398a8b07c2652775c63ad0d7ef StaticDependenciesID=c4a4d914540ee740cd519bd834770bb4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_02.wav
+  importAddress: Guid(942019cf9ecd5854ebeb343b12b7f779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_DirtyGround/Footsteps_DirtyGround_Land/Footsteps_DirtyGround_Jump_Land_02.wav using Guid(942019cf9ecd5854ebeb343b12b7f779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a54e368fe44c4ff802fe654878cde43a') in 0.020463 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e3aa0352b383753d483534186b956c0 DependenciesID=6581a93c4c61553968f61176c919b3b6 StaticDependenciesID=ebd18a8ed1f49aae3271afa38d2f8b46 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_18.wav
+  importAddress: Guid(f3f683944e6861645a16971f3f17ca40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_18.wav using Guid(f3f683944e6861645a16971f3f17ca40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e505c787a759bdad4e3d9bbde651eb6f') in 0.0205216 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76d0d42120e453a3205b82d7fb7ff6fb DependenciesID=f057d811388a085e893218c23cf6d6f2 StaticDependenciesID=621d6faab4a6a3965be432fc451aadcb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01.wav
+  importAddress: Guid(1f0199a4c6005ec4abbb302f71bc036d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Walk/Footsteps_Rock_Walk_01.wav using Guid(1f0199a4c6005ec4abbb302f71bc036d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b88a0ad8a2d7b233779afb385e1f882a') in 0.0186037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6eb285f7df0bada0eb4ab72750ee9808 DependenciesID=25c437c958da84cf07a80045b1bb5a3e StaticDependenciesID=9875889c3ee5c0673204076b64e5cd13 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Downloaded/Horror Atmosphere LITE/BONUS/GUI/Click_005.wav
+  importAddress: Guid(46606266bf22a5d46b709bf5a1e1ee35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Horror Atmosphere LITE/BONUS/GUI/Click_005.wav using Guid(46606266bf22a5d46b709bf5a1e1ee35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f573643f6e8bff0397aae2bcfcb1409f') in 0.0194418 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f573a61b57d8ca3fb013d4609a162668 DependenciesID=2d35262d744791f5a6a6bcfa19df2bc3 StaticDependenciesID=21286385de9b4ab3f0ea450ee71f2109 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_19.wav
+  importAddress: Guid(acd6fcd8cc56d694db1662af3026d455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Sand/Footsteps_Sand_Walk/Footsteps_Sand_Walk_19.wav using Guid(acd6fcd8cc56d694db1662af3026d455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '38696e75a094f0eaabd9ea967bec763c') in 0.021807 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b6b2282aedafb693cfd634348526b154 DependenciesID=9c57f96b020d40d7def5b20ee926cf84 StaticDependenciesID=9ba17e81be5351b8ffd9641a62d6f5ff 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_01.wav
+  importAddress: Guid(551d550ab98e3cc4bb7793e752fe8628) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_01.wav using Guid(551d550ab98e3cc4bb7793e752fe8628) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1cb2ca8bc5a6a5e6a4e934548848212f') in 0.0177532 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8c427e2c1aaa1c6c25693ddf3266ce00 DependenciesID=1498d0b8c7c7820cc7f8fd3940c89860 StaticDependenciesID=336224774bd4ec7e2de252f8e61c53fa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Walk/Footsteps_MetalV2_Walk_07.wav
+  importAddress: Guid(48470fafc45f3c04792793e1005e62e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Walk/Footsteps_MetalV2_Walk_07.wav using Guid(48470fafc45f3c04792793e1005e62e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9733a7b3afbe0df504fa3aae18539508') in 0.0192951 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8643706d7ee500a0520b1e7351089d6a DependenciesID=ce15c1c62922ff158b55e9bab99b5d01 StaticDependenciesID=6eebf3cc30489c7c6936ac2cc5264bd1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_08.wav
+  importAddress: Guid(82354d1fee336984994fbdcc8154c89c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Run/Footsteps_Rock_Run_08.wav using Guid(82354d1fee336984994fbdcc8154c89c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '802b481ae03234042470ba0d124f700d') in 0.0209047 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d32c6b7fc5226fbd72dd73982eda9ad1 DependenciesID=c6d20ba586e3ed122f70044a8afab743 StaticDependenciesID=c20dca43661b8218c34d7edefe67a78c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Downloaded/Horror Atmosphere LITE/Ambience/Atmosphere And Chaos/Atmosphere_010_Soft(SINGLE LOOP).wav
+  importAddress: Guid(6fa88048be821f3479ae000b744de2e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Horror Atmosphere LITE/Ambience/Atmosphere And Chaos/Atmosphere_010_Soft(SINGLE LOOP).wav using Guid(6fa88048be821f3479ae000b744de2e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '432e134c13ec46e2f583cb9aa17a50e0') in 0.2969827 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=488c072e5a6896ea65ce725576820e3c DependenciesID=bdb998c45be09672c1173f7020613d2f StaticDependenciesID=6059786370795b2556fa6e064b2992b8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Walk/Footsteps_MetalV1_Walk_12.wav
+  importAddress: Guid(2705e9a452d315940a37bf3403ce5927) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Walk/Footsteps_MetalV1_Walk_12.wav using Guid(2705e9a452d315940a37bf3403ce5927) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '92601548bc36669e3eabc4bdc12d049b') in 0.0234591 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=627c0517e1cd46787aa383be8374cb6f DependenciesID=b3475a20483035e2a1d66eb63aab3b7f StaticDependenciesID=a0212c940564342f9f7df6bb1698a2b1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Mud/Footsteps_Mud_Jump/Footsteps_Mud_Jump_Land_03.wav
+  importAddress: Guid(09285afe64b606044b4bba58b6cced49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Mud/Footsteps_Mud_Jump/Footsteps_Mud_Jump_Land_03.wav using Guid(09285afe64b606044b4bba58b6cced49) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ac3348a8cf2999133aa98deff849d433') in 0.020795 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2212498011063e7827c75a83bc4e0be DependenciesID=0a8cf0f8cd32cc85bd25fa2a37ba7e73 StaticDependenciesID=f9fccb18094e22de839d9e346e02ad47 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_08.wav
+  importAddress: Guid(0c4726bd3866ab840a1cf5b807849c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Foley_Grass/Footsteps_Grass_Tall_Movement_08.wav using Guid(0c4726bd3866ab840a1cf5b807849c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a2c6f310d2639728f8aae6a68e711153') in 0.027639 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a98d638a32bf0ca8d657c64143766af DependenciesID=5a281f16868ca2caf2d156f0101b1d41 StaticDependenciesID=b641b467adccabde70df2b6ad21996c0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Jump/Footsteps_Leaves_Jump_Start_02.wav
+  importAddress: Guid(156f78901fdf86e49ac90dd0c4a31ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Leaves/Footsteps_Leaves_Jump/Footsteps_Leaves_Jump_Start_02.wav using Guid(156f78901fdf86e49ac90dd0c4a31ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0c9f38e8d9b0cc972d0d6aa5100d1f00') in 0.0224011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5c49f0cbf7f52d7ae1192dd04b4bd78f DependenciesID=f4cabb19350c02d20c27234073a97245 StaticDependenciesID=8f9c6dd8faf88d6ba732a345e467d691 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Run/Footsteps_MetalV1_Run_07.wav
+  importAddress: Guid(b16b005ddc0977b4aa402b5abce3205f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Metal/Footsteps_Metal_Run/Footsteps_MetalV1_Run_07.wav using Guid(b16b005ddc0977b4aa402b5abce3205f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3f55207ba1743e8f4d943f6e21673fee') in 0.0219819 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b055a0780d6b87b22bc185e2bba045a3 DependenciesID=5cbec89768ea5400e05370d7609fd6f3 StaticDependenciesID=de753f3dfe6e53c07f54d71fbe3689d2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Hard_Walk_06.wav
+  importAddress: Guid(f80636348148ff84095ac896bff66d1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Hard_Walk_06.wav using Guid(f80636348148ff84095ac896bff66d1c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a786cf61b0d4f0802f09621b5b2a523a') in 0.0225672 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=803a7994e58a48216adbe602b339e8bb DependenciesID=bb7001db7d5c33b52300f87bda098d48 StaticDependenciesID=0ed2bf412fc8b3f015cdbf684aac8c46 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Land_02.wav
+  importAddress: Guid(a967f92e38352bb4291945423de63499) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Jump/Footsteps_Grass_Jump_Land_02.wav using Guid(a967f92e38352bb4291945423de63499) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0deda8557059bd57548b8671f3ba8eb5') in 0.0249522 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6b5b16bea671bc04113f23c1bbb71dbf DependenciesID=e5033be55a73e78f02b907a3cdff3733 StaticDependenciesID=db50850dfb61cffe4f3e7f371b423955 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Walk_02.wav
+  importAddress: Guid(bc42a9fc9dbd95442849a1d0a23dd41e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Walk_02.wav using Guid(bc42a9fc9dbd95442849a1d0a23dd41e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '32336103a767032ca6af8ddcec8e5d98') in 0.0223182 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6122205cedf0efdca1d7c02108d7bc12 DependenciesID=0bb0dd14268134a61ca7bc3958967722 StaticDependenciesID=fc1c863454400da5493089de48fd2f23 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Run/Footsteps_Snow_Run_10.wav
+  importAddress: Guid(763409ee05f3fce4a8e83df52710a28e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Run/Footsteps_Snow_Run_10.wav using Guid(763409ee05f3fce4a8e83df52710a28e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9338004367572cb9b350f5a3510d57f5') in 0.0230513 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1a17ecf46af2d344755b21049a197ebc DependenciesID=7cee4880eb054f50796b1517c92b82ed StaticDependenciesID=3b63fd88ec03cf03ceda565d6e98b159 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Walk_03.wav
+  importAddress: Guid(4484cb0b05ef2ae4c9fffdbbbd82c5cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Snow/Footsteps_Snow_Walk/Footsteps_Snow_Walk_03.wav using Guid(4484cb0b05ef2ae4c9fffdbbbd82c5cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b398a4e16cb53272141892ba7b3d3f32') in 0.021233 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97d39aac014ff9af466661f857f3d872 DependenciesID=ecc963500b9ea5a71c5e03864de2823c StaticDependenciesID=d6c4b4416d130573a6b8728983c3f02a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_02.wav
+  importAddress: Guid(e708389b7a8f64a46aa12d201c187b69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Rock/Footsteps_Rock_Jump/Footsteps_Rock_Jump_Start_02.wav using Guid(e708389b7a8f64a46aa12d201c187b69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8581bc4c192873f58143211fcc0eb752') in 0.0238094 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=feec65e440ff88663f1f6fb82d23e0fe DependenciesID=5fb9ead7d8f0d1243c4ff1d24ddca2a9 StaticDependenciesID=0906e0fd0b510025f0fe17217acf0038 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Walk/Footsteps_WaterV2_Walk_01.wav
+  importAddress: Guid(518cdd508d673124da33c3a5cdd93f05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Water/Footsteps_Water_Walk/Footsteps_WaterV2_Walk_01.wav using Guid(518cdd508d673124da33c3a5cdd93f05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd8c981401afc8679b44523a8f3b5eacb') in 0.0267888 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=54e1f46205d45b01800298ca9214173b DependenciesID=906bb1a502d4c3ea04fb989ddcbfb175 StaticDependenciesID=73ccb91cd1d067c5c8f3749b205de466 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_01.wav
+  importAddress: Guid(304f2bf2228cba94e91cd22803e54bcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Footsteps - Essentials/Footsteps_Tile/Footsteps_Tile_Jump/Footsteps_Tile_Jump_Land_01.wav using Guid(304f2bf2228cba94e91cd22803e54bcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8a9216387e1473dada4721af02163275') in 0.0195812 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b591cdd683ec17e0f93e8bfe783d699 DependenciesID=7f00fc8bdc7f709d6c81162b92467cb5 StaticDependenciesID=44b7162a8c7315bdd76550407fbb3457 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 3.80 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.647 seconds
+Domain Reload Profiling: 4035ms
+	BeginReloadAssembly (1434ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (1079ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (767ms)
+		LoadAssemblies (649ms)
+		AnalyzeDomain (376ms)
+			TypeCache.Refresh (13ms)
+			BuildScriptInfoCaches (334ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1648ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (263ms)
+			ProcessInitializeOnLoadAttributes (832ms)
+			ProcessInitializeOnLoadMethodAttributes (148ms)
+			AfterProcessingInitializeOnLoad (3ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 4.46 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6633 unused Assets / (4.7 MB). Loaded Objects now: 7477.
+Memory consumption went from 163.2 MB to 158.5 MB.
+Total: 13.682600 ms (FindLiveObjects: 0.823000 ms CreateObjectMapping: 0.807900 ms MarkObjects: 9.514700 ms  DeleteObjects: 2.534700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
