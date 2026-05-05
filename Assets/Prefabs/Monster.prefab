@@ -53,8 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   reachedDistance: 0.3
   playerTag: Player
-  viewDistance: 5
-  viewAngle: 60
+  viewDistance: 6
+  viewAngle: 120
   eyeHeight: 0.5
   obstacleMask:
     serializedVersion: 2

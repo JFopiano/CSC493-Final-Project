@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 32387 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-04T20:34:10.6124952Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp" at "2026-05-04T23:49:18.8673388Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-04T20:34:10Z
+Date: 2026-05-04T23:49:18Z
 
 COMMAND LINE ARGUMENTS:
 A:\UnityHub\Unity Hub\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ A:/UnityHub/CSC493FP-Work
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-58648
+61050
 -licensingIpc
 LicenseClient-paulp
 -force-d3d12
@@ -68,12 +68,12 @@ A:/UnityHub/CSC493FP-Work
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [16288]  Target information:
+Player connection [36160]  Target information:
 
-Player connection [16288]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 2482025637 [EditorId] 2482025637 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [36160]  * "[IP] 192.168.0.96 [Port] 0 [Flags] 2 [Guid] 3387170723 [EditorId] 3387170723 [Version] 1048832 [Id] WindowsEditor(7,WarMachinePP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16288] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16288] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [36160] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [36160] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.23 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.24 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path A:/UnityHub/CSC493FP-Work/Assets
@@ -103,28 +103,13 @@ Initialize mono
 Mono path[0] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
 CodeReloadManager initialized
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
-[Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-04T20:34:13.8597424Z"
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              ef0d0c866bc742b2aff357abafb4ca5c
-  Correlation Id:          0ed2e0aa8a725d0709b580bcf38da216
-  External correlation Id: 2663422380433681904
-  Machine Id:              qRZcJ3jZoV+klU0f72OZIpRyvBw=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.15s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-04T20:34:17.010764Z"
-[Licensing::Module] Licensing Background thread has ended after 6.40s
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: A:/UnityHub/Unity Hub/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 1.566331 seconds.
+Registered in 0.003275 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -133,27 +118,44 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.662 seconds
-Domain Reload Profiling: 9303ms
-	BeginReloadAssembly (944ms)
-	RebuildCommonClasses (1283ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (1683ms)
-	LoadAllAssembliesAndSetupDomain (4707ms)
-		LoadAssemblies (954ms)
-		AnalyzeDomain (4680ms)
-			TypeCache.Refresh (4679ms)
-				TypeCache.ScanAssembly (3726ms)
-	FinalizeReload (665ms)
+- Finished resetting the current domain, in  0.769 seconds
+Domain Reload Profiling: 1898ms
+	BeginReloadAssembly (451ms)
+	RebuildCommonClasses (74ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (143ms)
+	LoadAllAssembliesAndSetupDomain (431ms)
+		LoadAssemblies (450ms)
+		AnalyzeDomain (412ms)
+			TypeCache.Refresh (411ms)
+				TypeCache.ScanAssembly (387ms)
+	FinalizeReload (772ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (79ms)
-			BeforeProcessingInitializeOnLoad (145ms)
-			ProcessInitializeOnLoadAttributes (181ms)
-			ProcessInitializeOnLoadMethodAttributes (136ms)
+			InitializePlatformSupportModulesInManaged (91ms)
+			BeforeProcessingInitializeOnLoad (174ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-paulp"
+[Licensing::IpcConnector] LicenseClient-paulp channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4" at "2026-05-04T23:49:23.0423616Z"
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              115cbd43e5614d4cb57566640f48bde3
+  Correlation Id:          2b4315e127db4b21124269c952bdc622
+  External correlation Id: 2654503955791048291
+  Machine Id:              qRZcJ3jZoV+klU0f72OZIpRyvBw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-paulp-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.51s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-paulp-6000.4.4-notifications" at "2026-05-04T23:49:26.5552191Z"
+[Licensing::Module] Licensing Background thread has ended after 7.69s
+[Licensing::Module] Licensing is initialized (took 3.23s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2474244442130-UnityPersXXXX
@@ -190,72 +192,503 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 2.91 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 2.34 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.581 seconds
-Domain Reload Profiling: 28420ms
-	BeginReloadAssembly (409ms)
-		DisableScriptedObjects (8ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (18718ms)
-	LoadAllAssembliesAndSetupDomain (6627ms)
-		LoadAssemblies (5667ms)
-		AnalyzeDomain (1239ms)
-			TypeCache.Refresh (1122ms)
-				TypeCache.ScanAssembly (1098ms)
-			BuildScriptInfoCaches (93ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (2581ms)
+- Finished resetting the current domain, in  1.481 seconds
+Domain Reload Profiling: 6180ms
+	BeginReloadAssembly (3599ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (116ms)
+	LoadAllAssembliesAndSetupDomain (889ms)
+		LoadAssemblies (669ms)
+		AnalyzeDomain (450ms)
+			TypeCache.Refresh (317ms)
+				TypeCache.ScanAssembly (294ms)
+			BuildScriptInfoCaches (112ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1482ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (214ms)
-			ProcessInitializeOnLoadAttributes (793ms)
-			ProcessInitializeOnLoadMethodAttributes (118ms)
-			AfterProcessingInitializeOnLoad (3ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 3.28 ms, found 4 plugins.
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (230ms)
+			ProcessInitializeOnLoadAttributes (761ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.88 ms, found 4 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6634 unused Assets / (5.4 MB). Loaded Objects now: 7458.
-Memory consumption went from 162.2 MB to 156.7 MB.
-Total: 12.186600 ms (FindLiveObjects: 0.670200 ms CreateObjectMapping: 0.545600 ms MarkObjects: 7.155900 ms  DeleteObjects: 3.811100 ms)
+Unloading 6637 unused Assets / (5.0 MB). Loaded Objects now: 7461.
+Memory consumption went from 158.7 MB to 153.7 MB.
+Total: 12.251600 ms (FindLiveObjects: 0.645200 ms CreateObjectMapping: 1.002100 ms MarkObjects: 7.640700 ms  DeleteObjects: 2.959200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 91734.039094 seconds.
-  path: Assets/Downloaded/Horror Atmosphere LITE/Ambience/Ambience FX/Bell-002.wav
-  importAddress: Guid(69e4ce5d3e61aa24c96191f33a139496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Downloaded/Horror Atmosphere LITE/Ambience/Ambience FX/Bell-002.wav using Guid(69e4ce5d3e61aa24c96191f33a139496) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '81d52947cbccb2d0348611c8a217e17c') in 0.1724089 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=441f4b9c78adc98c9a0ea1d0b4f172dc DependenciesID=3e7448e216a5b359d98d2ed4fbbdc767 StaticDependenciesID=69038d825419b1b8d8da74a4534f3968 
+  Time since last request: 103398.911889 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/HDRPMediumQuality.asset
+  importAddress: Guid(3e2e6bfc59709614ab90c0cd7d755e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/HDRPMediumQuality.asset using Guid(3e2e6bfc59709614ab90c0cd7d755e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '565290fe7f6996593f7663d26a5f583b') in 0.0978105 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cdb84baa81606e47e7b8513c0ded8d9d DependenciesID=4044d7555edb3642ab54d45e58e43b82 StaticDependenciesID=b71433d06880b87b4f5e977395045333 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04
+  importAddress: Guid(df5ae89f9610e154ca6b9490fc7864c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04 using Guid(df5ae89f9610e154ca6b9490fc7864c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5a9d6bd708fad9f448fe4998fd975e24') in 0.0412036 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d2b946cfa4fee5435ca194698827d3a DependenciesID=48d094cbdea6d5e38f6630cc8374a399 StaticDependenciesID=18423fd7f6e8b796a4c095b0feedd4df 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Base_Color.png
+  importAddress: Guid(dddc6db373f5e9e4985982d0124b04a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Base_Color.png using Guid(dddc6db373f5e9e4985982d0124b04a6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5b8c6eb4314c254e878b34a050fe436d') in 0.1084233 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f7b03e0542aa183eb4dad2c3475a31a6 DependenciesID=148d02ed85651636a60c7d8212f79ea0 StaticDependenciesID=7b90e5c90e0d3d258db1f37f048db0ae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/ScreenshotsTimelineProfile.asset
+  importAddress: Guid(03bc34b71695890468eb021c73b228db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/ScreenshotsTimelineProfile.asset using Guid(03bc34b71695890468eb021c73b228db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6f2ddce0977368cdbf7de8195837b968') in 0.0238664 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f48fb65cbc30834c296780e933b2ee87 DependenciesID=d773bb23c94d57a1b06cc6a3a696c336 StaticDependenciesID=3cdd7b3f6b45ccd0abb9badbd33cb898 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T01/Outdoor_Wall_T01_Normal_DirectX.png
+  importAddress: Guid(bd13c0517fe60344797510fc724775db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T01/Outdoor_Wall_T01_Normal_DirectX.png using Guid(bd13c0517fe60344797510fc724775db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3f987b237a1855c6984514a354009084') in 0.0217751 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f57f017fff0a9325d769cc47a590859e DependenciesID=06ac5563c01a6dfbf7ad9ba853ba45ba StaticDependenciesID=f37cee8d2bcb9b9e780bf3f591ccb444 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T06/Outdoor_Wall_T06_Ambient_occlusion.png
+  importAddress: Guid(26795b2541ef42b4d98f8c2cf2cfdf91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T06/Outdoor_Wall_T06_Ambient_occlusion.png using Guid(26795b2541ef42b4d98f8c2cf2cfdf91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2be4348f7cb3db549430dbd01b4ad8b4') in 0.0349065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16a0b0776bc823bd4e73b4113bb32cc2 DependenciesID=fbda61fd4c7d0293d53b9d7243634d96 StaticDependenciesID=c627459b27c3fc97e8026bca1682a309 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Height.png
+  importAddress: Guid(197157c7bf4f923448f96b48430e54f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Height.png using Guid(197157c7bf4f923448f96b48430e54f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4f224c1b1a6f73f51f444bad787c4109') in 0.0227538 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f25c7a65541ce1e59c6515add1514a5 DependenciesID=7569dd3267d3115118d80ef9cfc3077e StaticDependenciesID=4134c49d8423f7ccae6c31a6a48bd5fe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/HDRPDefaultResources/DefaultHDRISky.exr
+  importAddress: Guid(54a3a0570aebe8949bec4966f1376581) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/HDRPDefaultResources/DefaultHDRISky.exr using Guid(54a3a0570aebe8949bec4966f1376581) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1377bdd2c2dc0a32a0387b070e95ddc9') in 0.0407288 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7b30f14067ab08bba53b089185737fa8 DependenciesID=cd79d7ac88f75b63285bb31ce6b7d7c9 StaticDependenciesID=74db74b4451c58ab9889686da2ef3956 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings
+  importAddress: Guid(006b6043041431d4d909ad5f958582cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings using Guid(006b6043041431d4d909ad5f958582cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9082f7554e2f8b48a9ec484cfcde59bc') in 0.0161515 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b28ebf3c2e6fdbe1998e9ca962e6f9a4 DependenciesID=4512ab76062d751f378649636cca25fa StaticDependenciesID=521c9a565c9ca6854e7b4202f3792618 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T08/Outdoor_Wall_T08_Ambient_occlusion.png
+  importAddress: Guid(45d2e40f430f89a4ba2756a306478d39) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T08/Outdoor_Wall_T08_Ambient_occlusion.png using Guid(45d2e40f430f89a4ba2756a306478d39) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2eff68e6ebb54aab0cbc4264a5905086') in 0.0320261 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a0156a46d2f71a25968ad05ad9d4de0 DependenciesID=97bd915496defd5f3068ac3cee7453fe StaticDependenciesID=b7f0d197282f15a086a9c455aed1096c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T08/Outdoor_Wall_T08_Roughness.png
+  importAddress: Guid(efed8a33cafa3be47842427d86e9fd0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T08/Outdoor_Wall_T08_Roughness.png using Guid(efed8a33cafa3be47842427d86e9fd0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b89bdd91d5e0f15ddd1ec5406f15a68b') in 0.0349113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6925d595593f1e401b1df8ed4c671295 DependenciesID=5b98ea9708f7804cc5739fd3808ac8ff StaticDependenciesID=430410958fa5c156d3d2f94f3c7af9a3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T14.mat
+  importAddress: Guid(e9665c59c972a0a49a933c2093023e13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T14.mat using Guid(e9665c59c972a0a49a933c2093023e13) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '201aba7da550b5752750d9c704ac3eb5') in 0.0554882 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8c035962e1efcc6e2232fd6d86592b24 DependenciesID=4422d339074c3e830f16734c1da69740 StaticDependenciesID=9a31e6b99860e051c62eb216d68c1951 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T09/Outdoor_Wall_T09_Base_Color.png
+  importAddress: Guid(7b0e9d57f190f1f4892cc27c30f6f485) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T09/Outdoor_Wall_T09_Base_Color.png using Guid(7b0e9d57f190f1f4892cc27c30f6f485) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4cff272d6076faa80a52940081cdc295') in 0.0341128 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=42f1085c548f1be4110f49f73ad25967 DependenciesID=e71827dee3a418e540736c04a10a98b2 StaticDependenciesID=b291c834c51e16c36cfd06264f02c92d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Sample.mat
+  importAddress: Guid(a399c919b73d77f4994532ac08599770) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Sample.mat using Guid(a399c919b73d77f4994532ac08599770) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '16a220a4e562013dbcfdb70b396c57ba') in 0.0331925 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7ac1b54500a949015384dea40ec7fa2f DependenciesID=403b74f3b100491cee1af1425109eb4a StaticDependenciesID=250179c88409960b9de936b2f7e19cc9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Roughness.png
+  importAddress: Guid(0738bb658c156d64195ecf225919f12c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Roughness.png using Guid(0738bb658c156d64195ecf225919f12c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f0069e9ecd4c8dbfda6d6bf534f8b3b0') in 0.0331373 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9f1119aae21a69b803b9f1188313694 DependenciesID=d9e4936748eb00c3ea6cab70ef984ca8 StaticDependenciesID=f1defcec546905b96f6c50d256819495 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Normal_DirectX.png
+  importAddress: Guid(3bba7f152ad295d42a249d2187128acd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Normal_DirectX.png using Guid(3bba7f152ad295d42a249d2187128acd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9bbaa6a3a3050a88929af095b926e90e') in 0.0261984 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=75167cb749318461ecee0978dd2f5c8c DependenciesID=e99f933cd849c5aeb53ac011a87f4213 StaticDependenciesID=76032e1c5ce9e6e3b1ee59f566a290d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Ground.mat
+  importAddress: Guid(bf214fef10ef3094daa8d1f0646d4edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Ground.mat using Guid(bf214fef10ef3094daa8d1f0646d4edf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9cd14b22096abde4f3340004e5a93641') in 0.0213971 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e05115f2a930fcceeaaa685a78c9b45 DependenciesID=09edbae143f37237dc12435afcfa778c StaticDependenciesID=1490e57883a9359d35e59fd31164637f 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Downloaded/Horror Atmosphere LITE/Ambience
-  importAddress: Guid(bfb5e536fa386124a947246269a9422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Downloaded/Horror Atmosphere LITE/Ambience using Guid(bfb5e536fa386124a947246269a9422c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c457faf08d76ec6693ea67e980c70f67') in 0.0008945 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b98e9d691a1964fe0d788a1b15b8891 DependenciesID=1254faf8efbeef01a63f09563d7aa0cc StaticDependenciesID=e76c0cf070d90071bf68a76326f32bdd 
+  Time since last request: 0.000039 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T12/Outdoor_Wall_T12_Base_Color.png
+  importAddress: Guid(4b5ddcc0854a1dc4082a0fc1c6a41de5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T12/Outdoor_Wall_T12_Base_Color.png using Guid(4b5ddcc0854a1dc4082a0fc1c6a41de5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f0f5a4b3efc93baa77ec7fe9c6b10cb9') in 0.0212746 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44534f83b9e3fe39f1f71e95d676b728 DependenciesID=528255d7020ccfb1a3f48b00d24017e9 StaticDependenciesID=83faebb2b6158a49ac9540e5959a0294 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/VolumeRoom3.asset
+  importAddress: Guid(06114ad16a0bc0a41957375ac3bf472e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/VolumeRoom3.asset using Guid(06114ad16a0bc0a41957375ac3bf472e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4427c1ddcf5f2b3c1b57d31bd5056f24') in 0.02128 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e4ee59501f639b02f215220e59118693 DependenciesID=b4eb824cf4db9daf6063e1a98b3eeb35 StaticDependenciesID=8c981e22171eddc0f404671920d000a8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Roughness.png
+  importAddress: Guid(a63f788fddca8a04a8fd0ccb31207ddb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T04/Outdoor_Wall_T04_Roughness.png using Guid(a63f788fddca8a04a8fd0ccb31207ddb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'aad9cd544a7ce8a9155dab4e9050dbf5') in 0.0380266 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=462a5aa4aa0f772e991e5560d7f765f8 DependenciesID=9e2ca8863f192e3449da8d04fe76cdef StaticDependenciesID=e5a8ba05dd4eb7ff7fbbe7d50f5eb8fd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Normal_DirectX.png
+  importAddress: Guid(c5f02d970bf6a444391960431fad7394) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T14/Outdoor_Wall_T14_Normal_DirectX.png using Guid(c5f02d970bf6a444391960431fad7394) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '24dabac35733cfc1edb1047dfcfea128') in 0.0240728 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d10331a380efca8c8f1bb295f05ba15f DependenciesID=06b8323b92c4aaffe31db4dd4a56f0c0 StaticDependenciesID=f61671ba7f3127144bd2ff7972d19e54 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T01/Outdoor_Wall_T01_Height.png
+  importAddress: Guid(d345008fd77998b4aa64aff436270f70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T01/Outdoor_Wall_T01_Height.png using Guid(d345008fd77998b4aa64aff436270f70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3cdd9392d11bfd7aaa7abb9c639451a9') in 0.0222791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b73b0dc463dab4a447bf9be302222d0d DependenciesID=c00820ac52af9b51e6c70432dd1cf917 StaticDependenciesID=d4a5d7f46c99e9d7bcca71e68840d7a2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T10/Outdoor_Wall_T10_Base_Color.png
+  importAddress: Guid(f58eb523be91eb944a99fa2f3ea6a111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T10/Outdoor_Wall_T10_Base_Color.png using Guid(f58eb523be91eb944a99fa2f3ea6a111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fe86427bade1230a404116d1d547f27a') in 0.0359543 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=06392a62351ce5f0ff70f52360ce78ba DependenciesID=9cee4dd52cc21008e1d78e8bd25efdcb StaticDependenciesID=85ace8797a5096bec1e66404f4d8b27c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Downloaded/Phoenix3D/UpgradeRenderPipeline/Upgrade_SRP.unitypackage
+  importAddress: Guid(dfbb477c16c0cfa4dba2be603a07bb6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/UpgradeRenderPipeline/Upgrade_SRP.unitypackage using Guid(dfbb477c16c0cfa4dba2be603a07bb6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a7ce23c4a8f796529fb98fe1e5c473e2') in 0.0164652 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b30f4f1d4ba792d697997ff4d2e776b DependenciesID=35be9c026ab7bb41b5d683484471a489 StaticDependenciesID=eb73aeb8b9510cec26e662d3ca3942d1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07/Outdoor_Wall_T07_Ambient_occlusion.png
+  importAddress: Guid(4f3e20c4cfe83a9468c6dc3ffbfe5a62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07/Outdoor_Wall_T07_Ambient_occlusion.png using Guid(4f3e20c4cfe83a9468c6dc3ffbfe5a62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eb79995bc86c8f4b5361befe0e0fcea0') in 0.0330768 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e68638bc6e4c861e421d35121a81303 DependenciesID=c75731249fe0f7089d9bdcf0a9d1eb3e StaticDependenciesID=100fd1b24d55a6c0dd23f142f6b884da 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/VolumeRoom3Sitting.asset
+  importAddress: Guid(7bca3a07cdd522c4c8020832c20b3eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes/VolumeRoom3Sitting.asset using Guid(7bca3a07cdd522c4c8020832c20b3eae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '51f29a52a960be012d7a9b57c1512668') in 0.0196314 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=273d61f5790e8543cdc9d535a18a1493 DependenciesID=014b8311d7c5a658384d377281c00e60 StaticDependenciesID=66cd09f2986e8325751eab307f92d15d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/DiffusionProfiles/Skin.asset
+  importAddress: Guid(26bdddf49760c61438938733f07fa2a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/DiffusionProfiles/Skin.asset using Guid(26bdddf49760c61438938733f07fa2a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a919749854d268e883823864979cfeb7') in 0.029581 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=de5f1e2bf4b1e47ce65a5f921d0cf1c2 DependenciesID=ba41c1423b687ce41f337fb03ecfda73 StaticDependenciesID=c3183d14578cfc189d1a4cce91435757 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T05.mat
+  importAddress: Guid(9c951a81c1ee1034f94f55c0e499a111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T05.mat using Guid(9c951a81c1ee1034f94f55c0e499a111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7d36299c1f296aad3a92fd776c5413b2') in 0.0514753 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f6c2461de50d28a219aa8cd9d8c6f4a3 DependenciesID=bca2fe967ad03b7b77a6d2682a7d911f StaticDependenciesID=3ec26c9ced1e00fa282fc14decf94db6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T09/Outdoor_Wall_T09_Roughness.png
+  importAddress: Guid(9dbb1c651b6728f4180f7a621eadaee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T09/Outdoor_Wall_T09_Roughness.png using Guid(9dbb1c651b6728f4180f7a621eadaee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd36d30eb2c75bc85bd2fb98ac57528e4') in 0.0333362 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aa46d949492e66a448a8a96579b371be DependenciesID=e0b9075fd38705ca1e8844e677d360d2 StaticDependenciesID=5a763dd45c92b75fa8ad3f35a002cb93 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07/Outdoor_Wall_T07_Height.png
+  importAddress: Guid(17372255459abc5428389d7b0416349e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07/Outdoor_Wall_T07_Height.png using Guid(17372255459abc5428389d7b0416349e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '221770f06e4e8bd8078358f7c4b7f6f6') in 0.0388469 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eed10d433b6ee9dd8b5f312548e624ab DependenciesID=8ea3a00b5bc39ce423434bb35499f47c StaticDependenciesID=85dc35dd4601e35bf923e4615abd6496 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scripts/MazeRenderer.cs
+  importAddress: Guid(1006b896e222f6c42b1a5057c0bde61c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/MazeRenderer.cs using Guid(1006b896e222f6c42b1a5057c0bde61c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0c2b8ae57f411a81f31f11810e0a8c13') in 0.0217306 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1c8b337a26755254ae6d8bdb69a57b1 DependenciesID=a4c7f25bd4085fa3be27fb306182c5c7 StaticDependenciesID=c991a6390ead5d1d708385665f892fae 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Downloaded/Horror Atmosphere LITE/Ambience/Atmosphere And Chaos/Atmosphere_001(Beginning).wav
-  importAddress: Guid(ffb2799cc67698c41b89cfae5fc2ac28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Downloaded/Horror Atmosphere LITE/Ambience/Atmosphere And Chaos/Atmosphere_001(Beginning).wav using Guid(ffb2799cc67698c41b89cfae5fc2ac28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b9b21731a9923c324c84689221483a25') in 0.0980841 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ff504c7d02112a1a5ea8c89ce83b3cd DependenciesID=c7a4f09491e76f93a4022270ee477965 StaticDependenciesID=b423fcf4e7a4b8328ce05db232571a3d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000042 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07
+  importAddress: Guid(a25105b9807755f46984ded1085e00ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T07 using Guid(a25105b9807755f46984ded1085e00ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2458f4a1732c421eb355f50fa2957885') in 0.0156793 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=29236e8def919b9d7a5555f7fca0954b DependenciesID=6e922f89a9ad3633916175273f1bc3a4 StaticDependenciesID=497985582ddf9b974d6e7bbea307f739 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Scripts/MonsterMovement.cs
+  importAddress: Guid(a576226546d7b044a85796adbcdf8d9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scripts/MonsterMovement.cs using Guid(a576226546d7b044a85796adbcdf8d9a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ab201cdb58a894eeacf836fba0af0d52') in 0.0145076 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6d38edcd7bb3a00b7acdce071e3423c7 DependenciesID=97bf3da736f02a23babead169bd07ac5 StaticDependenciesID=aad102348a07b7b459ea9bfe1d627dd4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T15.mat
+  importAddress: Guid(2e09ba36d52985b4fb0a4b32d3292329) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T15.mat using Guid(2e09ba36d52985b4fb0a4b32d3292329) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1a2067a3f890da9fb599ecd3c09047cc') in 0.0256195 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f8d93ff3129bd35fc5a0ff6812f5992 DependenciesID=530f042ce23c59150a72c7c0bbf89a66 StaticDependenciesID=456d34ace7c625b3304eacfc3235d6b7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T06.mat
+  importAddress: Guid(f3bd095cadb724a40a7bec41620e08d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T06.mat using Guid(f3bd095cadb724a40a7bec41620e08d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1671235eb5896c01fb878735c2c1f782') in 0.0488002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f0f942e8889d0b3ad31857ff240582e DependenciesID=48b049cba056c9bb46364f0901f9a2b0 StaticDependenciesID=df5c15119c3bd6114aee97817e76e275 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings
+  importAddress: Guid(fe138a1cef03a4b4697bf91384514541) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings using Guid(fe138a1cef03a4b4697bf91384514541) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '97d328d8807c14687d8dc854b5fc3963') in 0.0176329 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4697c507c57f97b1402213aa02dd76dd DependenciesID=254cf130ff91b75ff45b0937e2422d07 StaticDependenciesID=b1272a2a00335a685e2d4d622561a95a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T10.mat
+  importAddress: Guid(622133156a5dc104aaef3efa33f253a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Materials/Outdoor_Wall_T10.mat using Guid(622133156a5dc104aaef3efa33f253a9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2fcde9ade3eed8cb25d960e9f6727435') in 0.04792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5275e7c81e0333b523af2baae9d3b972 DependenciesID=d05f92b2f285c70961622787fa1be90c StaticDependenciesID=72daa4511e0827b41a065ae95b01a545 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/VictoryScene.unity
+  importAddress: Guid(f4121d2cf59836048ba3ff8e4fca4f2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/VictoryScene.unity using Guid(f4121d2cf59836048ba3ff8e4fca4f2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bb4e2666318c995e1e069a85e5cde0fe') in 0.021555 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5150b2c516ebc30846b4f9719b8a7d0c DependenciesID=cace7dfb5455359a49cf8fa67ae2cfd7 StaticDependenciesID=fb42c6d3be0d2cff1e28db28c78c6519 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T10/Outdoor_Wall_T10_Normal_DirectX.png
+  importAddress: Guid(22c6880ec16fef04e9c0b9db9f0355bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T10/Outdoor_Wall_T10_Normal_DirectX.png using Guid(22c6880ec16fef04e9c0b9db9f0355bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a432d43495cc1e3f1cf3db559eff3183') in 0.0227323 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ec391830c8e8c1c15bd7007955c9f7c4 DependenciesID=2039ab28c8fe6c7e4bc87d6005def6ec StaticDependenciesID=8537d732d12f1ea9ca94f96681b02225 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T02/Outdoor_Wall_T02_Normal_DirectX.png
+  importAddress: Guid(305d12fd0fb4d3842a6e5d080c6c6ff3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T02/Outdoor_Wall_T02_Normal_DirectX.png using Guid(305d12fd0fb4d3842a6e5d080c6c6ff3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8fea2051d2a155ad8eafe5740dba8995') in 0.0235947 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ed3a73f460e0120dc4820067dab65a0 DependenciesID=dc1a6591aa98ee956b487c8547361a64 StaticDependenciesID=c84f82ad718a726dd42b3c449218738e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/HDRPDefaultResources
+  importAddress: Guid(abc661c586a9116428571bb17ea1a331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/HDRPDefaultResources using Guid(abc661c586a9116428571bb17ea1a331) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bc30f56cf15ac0ac80d4eb92991b60b1') in 0.016357 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4bbc90fe297f7c7fe543eb6f4e3fb9e0 DependenciesID=1e5be439387e70dbad809a7970df30d0 StaticDependenciesID=44f1f72cbd37627f6431cf6771a7de65 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes
+  importAddress: Guid(0edf0c3665235f9448abd4deb0e40bbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Demo/HDRP_Settings/Settings/Volumes using Guid(0edf0c3665235f9448abd4deb0e40bbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2ebdd5921ebd441f844dc7727c2e180f') in 0.0176271 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=235760f443ef60682cc1c4cf277889c7 DependenciesID=8d43858e580af73432fbff2fd8cf8e7f StaticDependenciesID=8bb6d837dc47c64ded0ead76928ade62 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/GameOverScene.unity
+  importAddress: Guid(cabafe11e0972e74eb7632789f9ca19d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/GameOverScene.unity using Guid(cabafe11e0972e74eb7632789f9ca19d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '62cc25c6a0b1f5e0d564b54014084d90') in 0.0190503 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0541076dfef5ce3538e9c077efa78ca4 DependenciesID=c5a86893f1ec3aeba55c406047474a19 StaticDependenciesID=d59176c0ddb6d9d6cd420b91308a1869 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T03/Outdoor_Wall_T03_Roughness.png
+  importAddress: Guid(4530efe8a35bc954e9a347c1627e2bee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T03/Outdoor_Wall_T03_Roughness.png using Guid(4530efe8a35bc954e9a347c1627e2bee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '239c80847fbc00c44d02c4e86eca3678') in 0.03532 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dee68fb23dd1970a755ca234e8ce3148 DependenciesID=4ec26290de220d5602dc1858731d6ab3 StaticDependenciesID=cb95f5c70f451e17a15f7ddd5a3ae096 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T15/Outdoor_Wall_T15_Height.png
+  importAddress: Guid(b5cb3f0cdc9fdc444930070260b05072) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T15/Outdoor_Wall_T15_Height.png using Guid(b5cb3f0cdc9fdc444930070260b05072) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3833ba4ce3914995bf17aeac80bce92d') in 0.0246573 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fbe75ab61686ea1018dca3f697109976 DependenciesID=eaf86d795abba14e04f301fe23499ec8 StaticDependenciesID=bb9e905cd2a3aa9645e5aca75fd80d96 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T05/Outdoor_Wall_T05_MaskMap.png
+  importAddress: Guid(e3f054a9778dfbb4e9ddbd4ae95f5b77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T05/Outdoor_Wall_T05_MaskMap.png using Guid(e3f054a9778dfbb4e9ddbd4ae95f5b77) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dbd46b0b6d48e3cf2151ac99af8c34d7') in 0.031799 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e5bd9ee3293c63577e4a12184d68db9d DependenciesID=43c18c79370fb8cbb65a0d76e293a28e StaticDependenciesID=512fc0bde7416871075d8e82ba19b2ae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T05/Outdoor_Wall_T05_Height.png
+  importAddress: Guid(a3d7f8ad14a21554a9c87de29ddf5365) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Outdoor_Wall_T05/Outdoor_Wall_T05_Height.png using Guid(a3d7f8ad14a21554a9c87de29ddf5365) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9ae287d29304ffad66641802223f08ba') in 0.023975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=587cd5a6060126fe36d8eaccf4c1d59c DependenciesID=fecb3b7062c2434b0b34cf24342746af StaticDependenciesID=3eafd9125e234a9340c3fc49b0601801 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Downloaded/Phoenix3D/Textures/Phoenix3D.png
+  importAddress: Guid(b320a9c4a4e16434a9127fc55d5e3440) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Downloaded/Phoenix3D/Textures/Phoenix3D.png using Guid(b320a9c4a4e16434a9127fc55d5e3440) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '87956526cd7b60abd0fead8d96ab2fd1') in 0.0318534 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=556e7ade0a1ca3d35179325b4fddd0d5 DependenciesID=69de08e4b6adf97db84c97228499552b StaticDependenciesID=67570256c57ac0368c079988c04af12a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Refreshing native plugins compatible for Editor in 2.29 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.365 seconds
+Domain Reload Profiling: 2667ms
+	BeginReloadAssembly (440ms)
+		DisableScriptedObjects (7ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (101ms)
+	LoadAllAssembliesAndSetupDomain (683ms)
+		LoadAssemblies (667ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (10ms)
+			BuildScriptInfoCaches (260ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1366ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (207ms)
+			ProcessInitializeOnLoadAttributes (690ms)
+			ProcessInitializeOnLoadMethodAttributes (154ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Refreshing native plugins compatible for Editor in 3.27 ms, found 4 plugins.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6636 unused Assets / (5.1 MB). Loaded Objects now: 7479.
+Memory consumption went from 164.6 MB to 159.5 MB.
+Total: 16.634800 ms (FindLiveObjects: 1.056000 ms CreateObjectMapping: 1.122000 ms MarkObjects: 10.869400 ms  DeleteObjects: 3.585500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
