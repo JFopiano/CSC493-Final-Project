@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// This class manages the Main Menu of the game
 public class MainMenu : MonoBehaviour
 {   
     // This method is called when the Main Menu scene is loaded

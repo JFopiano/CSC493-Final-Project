@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+// This script controls the behavior of the monster in the maze, including patrolling between checkpoints, 
+// detecting the player, chasing the player, and managing audio and animations based on its state.
 public class MonsterMovement : MonoBehaviour
 {
     // Reference to the NavMeshAgent component
@@ -27,6 +29,8 @@ public class MonsterMovement : MonoBehaviour
     public float patrolSpeed = 1.5f;
     public float chaseSpeed = 3.5f;
     public float losePlayerTime = 2f;
+
+    // Audio settings
 
     [Header("Monster Audio")]
     public AudioSource farAudioSource;
@@ -123,6 +127,7 @@ public class MonsterMovement : MonoBehaviour
             PatrolUpdate();
         }
 
+        // Update audio and animations based on the current state of the monster.
         UpdateMonsterAudio();
         UpdateAnimation();
         UpdateChaseMusic();
@@ -222,6 +227,7 @@ public class MonsterMovement : MonoBehaviour
         Gizmos.DrawRay(eyePosition, rightBoundary * viewDistance);
     }
 
+    // This method initializes the monster's audio sources and starts playing the appropriate sounds based on the monster's state.
     private void StartMonsterAudio()
     {
         if (farAudioSource != null && !farAudioSource.isPlaying)
@@ -243,6 +249,8 @@ public class MonsterMovement : MonoBehaviour
         }
     }
 
+    // This method updates the volumes of the monster's audio sources based on the player's 
+    // distance and whether the monster is chasing the player.
     private void UpdateMonsterAudio()
     {
         if (player == null) return;
@@ -272,6 +280,7 @@ public class MonsterMovement : MonoBehaviour
         FadeAudioSource(chaseAudioSource, targetChaseVolume);
     }
 
+    // This helper method smoothly fades an audio source's volume towards a target volume at a specified speed.
     private void FadeAudioSource(AudioSource source, float targetVolume)
     {
         if (source == null) return;
@@ -283,6 +292,7 @@ public class MonsterMovement : MonoBehaviour
         );
     }
 
+    // This method updates the monster's animations based on whether it is moving or not.
     private void UpdateAnimation()
     {
         if (animator == null || agent == null) return;
@@ -292,6 +302,8 @@ public class MonsterMovement : MonoBehaviour
         animator.SetInteger("Walk", isMoving ? 1 : 0);
     }
 
+    // This method updates the chase music state in the AudioManager based on whether 
+    // the monster is currently chasing the player or not.
     private void UpdateChaseMusic()
     {
         if (audioManager == null) return;

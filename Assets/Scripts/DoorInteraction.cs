@@ -1,15 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// This script allows the player to interact with doors in the game by pressing a key when looking at them, applying a force to open them.
 public class DoorInteraction : MonoBehaviour
-{
+{   
+    // Distance within which the player can interact with the door, adjustable in the Unity Inspector.
     public float interactDistance = 5f;
+
+    // Key used to interact with the door, adjustable in the Unity Inspector.
     public KeyCode interactKey = KeyCode.E;
+
+    // Force applied to the door when opening, adjustable in the Unity Inspector.
     public float openForce = 100f;
 
+    // Reference to the door's Rigidbody component and the player's camera, initialized in Start.
     private Rigidbody rb;
     private Camera playerCamera;
-
+    
+    // Initialize references to the Rigidbody and player camera, with error handling if they are not found.
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,6 +34,7 @@ public class DoorInteraction : MonoBehaviour
         }
     }
 
+    // Update is called once per frame to check for player input and attempt to open the door.
     void Update()
     {
         if (Input.GetKeyDown(interactKey))
@@ -36,6 +45,7 @@ public class DoorInteraction : MonoBehaviour
 
     }
 
+    // Method to attempt to open the door by raycasting from the player's camera and applying a force if the door is hit.
     void TryOpenDoor()
     {
         if (playerCamera == null || rb == null)
